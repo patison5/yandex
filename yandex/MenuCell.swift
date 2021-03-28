@@ -26,13 +26,13 @@ class MenuCell: UICollectionViewCell {
 		setupViews()
 		setupConstraints()
 	}
-	
+
 	override var isHighlighted: Bool {
 		didSet {
 			imageView.tintColor = isHighlighted ? .white : UIColor.init(red: 91/255, green: 14/255, blue: 13/255, alpha: 1)
 		}
 	}
-	
+
 	override var isSelected: Bool {
 		didSet {
 			imageView.tintColor = isSelected ? .white : UIColor.init(red: 91/255, green: 14/255, blue: 13/255, alpha: 1)
@@ -42,7 +42,7 @@ class MenuCell: UICollectionViewCell {
 	required init?(coder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
-	
+
 	private func setupViews() {
 		[imageView].forEach {
 			$0.translatesAutoresizingMaskIntoConstraints = false
@@ -55,7 +55,7 @@ class MenuCell: UICollectionViewCell {
 			imageView.widthAnchor.constraint(equalToConstant: 28),
 			imageView.heightAnchor.constraint(equalToConstant: 28)
 		])
-		
+
 		addConstraint(NSLayoutConstraint(item: imageView, attribute: .centerX, relatedBy: .equal, toItem: self, attribute: .centerX, multiplier: 1, constant: 0))
 		addConstraint(NSLayoutConstraint(item: imageView, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1, constant: 0))
 	}

@@ -7,36 +7,6 @@
 
 import UIKit
 
-//final class StocksViewController: UIViewController {
-//
-//	var collectionView = StocksCollectionView()
-//
-//	override func viewDidLoad() {
-//		super.viewDidLoad()
-//
-//		view.backgroundColor = .cyan
-//
-//		setupViews()
-//		setupConstraints()
-//	}
-//
-//	private func setupViews() {
-//		[collectionView].forEach {
-//			view.addSubview($0)
-//			$0.translatesAutoresizingMaskIntoConstraints = false
-//		}
-//	}
-//
-//	private func setupConstraints () {
-//		NSLayoutConstraint.activate([
-//			collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-//			collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-//			collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-//			collectionView.topAnchor.constraint(equalTo: view.topAnchor),
-//		])
-//	}
-//}
-
 class StocksViewController: UIViewController {
 
 	// MARK: - Public properties
@@ -46,17 +16,23 @@ class StocksViewController: UIViewController {
 	private weak var collectionView: UICollectionView!
 	private var data: [Int] = Array(0..<20)
 
-	private let menuBar: MenuBar = {
+	lazy var menuBar: MenuBar = {
 		let mb = MenuBar()
+		mb.stocksViewController = self
 		return mb
 	}()
+	
+	let cellId = "cellId"
 
 	// MARK: - Override
 
 	override func loadView() {
 		super.loadView()
 
-		let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+		let layout = UICollectionViewFlowLayout()
+		layout.scrollDirection = .horizontal
+		layout.minimumLineSpacing = 0
+		let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
 
 		self.view.addSubview(collectionView)
 
@@ -83,81 +59,72 @@ class StocksViewController: UIViewController {
 		titleLabel.font = UIFont.systemFont(ofSize: 20)
 		titleLabel.textColor = .white
 		navigationItem.titleView = titleLabel
+		
+		setupCollectionView()
+		setupMenuBar()
+	}
+	
+	
 
+	func setupCollectionView() {
 		self.collectionView.dataSource = self
 		self.collectionView.delegate = self
-		self.collectionView.register(StocksCollectionViewCell.self, forCellWithReuseIdentifier: StocksCollectionViewCell.identifier)
+//		self.collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
+//		self.collectionView.register(StocksCollectionViewCell.self, forCellWithReuseIdentifier: StocksCollectionViewCell.identifier)
+		self.collectionView.register(StocksPage.self, forCellWithReuseIdentifier: cellId)
 		self.collectionView.alwaysBounceVertical = true
 		self.collectionView.backgroundColor = .white
 		self.collectionView.contentInset = UIEdgeInsets(top: 50, left: 0, bottom: 0, right: 0)
 		self.collectionView.scrollIndicatorInsets = UIEdgeInsets(top: 50, left: 0, bottom: 0, right: 0)
-		
-		setupMenuBar()
+		self.collectionView.isPagingEnabled = true
+	}
+	
+	func scrollViewDidScroll(_ scrollView: UIScrollView) {
+		print(scrollView.contentOffset.x)
+		menuBar.horizontalLineLeftAnchor?.constant = scrollView.contentOffset.x / 2
+	}
+	
+	func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+		let index = targetContentOffset.move().x / view.frame.width
+		let indexPath = NSIndexPath(item: Int(index), section: 0)
+		menuBar.collectionView.selectItem(at: indexPath as IndexPath, animated: true, scrollPosition: .centeredHorizontally)
 	}
 }
 
 // MARK: - UICollectionViewDataSource
 
 extension StocksViewController: UICollectionViewDataSource {
-
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return self.data.count
+		return 2
 	}
 
+//	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//		return self.data.count
+//	}
+
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StocksCollectionViewCell.identifier, for: indexPath) as! StocksCollectionViewCell
-//		let data = self.data[indexPath.item]
-		
-		if indexPath.row % 2 == 0 {
-			cell.backgroundColor = UIColor.init(red: 244/255, green: 240/255, blue: 247/255, alpha: 1)
-		} else {
-			cell.backgroundColor = .white
-		}
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
 		return cell
 	}
 }
 
 // MARK: - UICollectionViewDelegate
 
-extension StocksViewController: UICollectionViewDelegate {
-
-	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
-	}
-}
+extension StocksViewController: UICollectionViewDelegate { }
 
 // MARK: - UICollectionViewDelegateFlowLayout
 
 extension StocksViewController: UICollectionViewDelegateFlowLayout {
 
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-		return CGSize(width: collectionView.bounds.width, height: 68)
-	}
-
-	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-		return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0) //.zero
-	}
-
-	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-		return 0
-	}
-
-	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-		return 0
+//		return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.height)
+		return CGSize(width: view.frame.width, height: view.frame.height - 50)
 	}
 }
 
 // MARK: - Private functions
 
 extension StocksViewController {
-
-	private func setupViews() {
-		
-	}
-
-	private func setupConstrints() {
-		
-	}
 
 	private func setupMenuBar() {
 		navigationController?.hidesBarsOnSwipe = true
@@ -181,5 +148,13 @@ extension StocksViewController {
 			menuBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
 			menuBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
 		])
+	}
+
+	func scrollToMenuIntdex(menuIndex: Int) {
+		let indexPath = NSIndexPath(item: menuIndex, section: 0)
+
+		self.collectionView.isPagingEnabled = false // fix ios 13-14 bug
+		self.collectionView.scrollToItem(at: indexPath as IndexPath, at: .left, animated: true)
+		self.collectionView.isPagingEnabled = true
 	}
 }

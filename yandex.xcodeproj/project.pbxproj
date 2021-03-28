@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9F48ED5C260FD15400C95468 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48ED5B260FD15400C95468 /* MenuBar.swift */; };
 		9F48ED5F260FD90F00C95468 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48ED5E260FD90F00C95468 /* MenuCell.swift */; };
+		9F48ED63261090DE00C95468 /* StocksPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48ED62261090DE00C95468 /* StocksPage.swift */; };
 		9F49AD1A2609FB5B00CEF00E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F49AD192609FB5B00CEF00E /* AppDelegate.swift */; };
 		9F49AD232609FB5C00CEF00E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F49AD222609FB5C00CEF00E /* Assets.xcassets */; };
 		9F49AD262609FB5C00CEF00E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F49AD242609FB5C00CEF00E /* LaunchScreen.storyboard */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		9F48ED5B260FD15400C95468 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		9F48ED5E260FD90F00C95468 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		9F48ED62261090DE00C95468 /* StocksPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksPage.swift; sourceTree = "<group>"; };
 		9F49AD162609FB5B00CEF00E /* yandex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yandex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F49AD192609FB5B00CEF00E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F49AD222609FB5C00CEF00E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,9 +70,10 @@
 				9F48ED5B260FD15400C95468 /* MenuBar.swift */,
 				9F48ED5E260FD90F00C95468 /* MenuCell.swift */,
 				9F49AD36260A2B7F00CEF00E /* StocksViewController.swift */,
-				9F49AD3A260A344300CEF00E /* StocksCollectionView.swift */,
 				9FB58EEF260FB13300336C87 /* StocksCollectionViewCell.swift */,
+				9F48ED62261090DE00C95468 /* StocksPage.swift */,
 				9F49AD222609FB5C00CEF00E /* Assets.xcassets */,
+				9F49AD3A260A344300CEF00E /* StocksCollectionView.swift */,
 				9F49AD242609FB5C00CEF00E /* LaunchScreen.storyboard */,
 				9F49AD272609FB5C00CEF00E /* Info.plist */,
 				9F49AD33260A113400CEF00E /* MainViewController.swift */,
@@ -151,6 +154,7 @@
 				9F49AD1A2609FB5B00CEF00E /* AppDelegate.swift in Sources */,
 				9FB58EF0260FB13300336C87 /* StocksCollectionViewCell.swift in Sources */,
 				9F49AD31260A103D00CEF00E /* HTTPCommunication.swift in Sources */,
+				9F48ED63261090DE00C95468 /* StocksPage.swift in Sources */,
 				9F49AD3B260A344300CEF00E /* StocksCollectionView.swift in Sources */,
 				9F49AD34260A113400CEF00E /* MainViewController.swift in Sources */,
 				9F48ED5C260FD15400C95468 /* MenuBar.swift in Sources */,

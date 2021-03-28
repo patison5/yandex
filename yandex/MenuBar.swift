@@ -13,6 +13,10 @@ class MenuBar: UIView, UICollectionViewDataSource, UICollectionViewDelegate, UIC
 
 	let cellId = "cellId"
 	var horizontalLineLeftAnchor: NSLayoutConstraint?
+	
+	let menuIcons = ["home", "favorite"]
+	
+	var stocksViewController: StocksViewController?
 
 	lazy var collectionView: UICollectionView = {
 		let layout = UICollectionViewFlowLayout()
@@ -82,6 +86,8 @@ extension MenuBar {
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! MenuCell
+//		cell.imageView.image = UIImage(named: menuIcons[indexPath.item])
+//		cell.imageView.tintColor = UIColor.init(red: 91/255, green: 14/255, blue: 13/255, alpha: 1)
 		return cell
 	}
 
@@ -93,12 +99,15 @@ extension MenuBar {
 		return 0
 	}
 
+	// Клик по элементу меню
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-		let x = CGFloat(indexPath.item) * frame.width / 2
-		horizontalLineLeftAnchor?.constant = x
-		
-		UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
-			self.layoutIfNeeded()
-		}, completion: nil)
+//		let x = CGFloat(indexPath.item) * frame.width / 2
+//		horizontalLineLeftAnchor?.constant = x
+//
+//		UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+//			self.layoutIfNeeded()
+//		}, completion: nil)
+
+		stocksViewController?.scrollToMenuIntdex(menuIndex: indexPath.item)
 	}
 }
