@@ -1,5 +1,5 @@
 //
-//  StocksPage.swift
+//  FavoritePage.swift
 //  yandex
 //
 //  Created by Fedor Penin on 28.03.2021.
@@ -7,45 +7,18 @@
 
 import UIKit
 
-class StocksPage: UICollectionViewCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class FavoritePage: UICollectionViewCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
-	static var identifier: String = "StocksPageCell"
-
-	var stocksData: [Stock] = {
-		let stockAAPL = Stock()
-		stockAAPL.currentPrice = "131.93$"
-		stockAAPL.priceDelta = "+$0.12 (1,15%)"
-		stockAAPL.title = "AAPL"
-		stockAAPL.titleDescription = "Apple Inc."
-		stockAAPL.thumbnailImageName = "AAPL"
-
-		let stockYNDX = Stock()
-		stockYNDX.currentPrice = "4 764,6 ₽"
-		stockYNDX.priceDelta = "+55 ₽ (1,15%)"
-		stockYNDX.title = "YNDX"
-		stockYNDX.titleDescription = "Yandex, LLC"
-		stockYNDX.thumbnailImageName = "YNDX"
-
-		let stockGoogle = Stock()
-		stockGoogle.currentPrice = "$1 825"
-		stockGoogle.priceDelta = "+$0.12 (1,15%)"
-		stockGoogle.title = "GOOGLE"
-		stockGoogle.titleDescription = "Alphabet Class A"
-		stockGoogle.thumbnailImageName = "GOOGL"
-
-		return [stockAAPL, stockYNDX, stockGoogle, stockAAPL, stockYNDX, stockGoogle]
-	}()
+	static var identifier: String = "FavoritePageCell"
 
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return stocksData.count
+		return 2
 	}
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! StocksCollectionViewCell
 
-		cell.stock = stocksData[indexPath.item]
-
-		if indexPath.item % 2 == 0 {
+		if indexPath.row % 2 == 0 {
 			cell.backgroundColor = UIColor.init(red: 244/255, green: 240/255, blue: 247/255, alpha: 1)
 		} else {
 			cell.backgroundColor = .white
@@ -102,3 +75,4 @@ class StocksPage: UICollectionViewCell, UICollectionViewDataSource, UICollection
 		fatalError("init(coder:) has not been implemented")
 	}
 }
+

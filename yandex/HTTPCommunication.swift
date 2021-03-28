@@ -44,7 +44,7 @@ extension HTTPCommunication: URLSessionDownloadDelegate {
             // исключение, мы используем try, а саму операцию заключаем
             // в блок do {} catch {}
             let data: Data = try Data(contentsOf: location)
-            // Далее мы выполняем completionHandler с полученными данными.
+            // Далее мы выполняем completionHandler с полученными данными.®
             // А так как загрузка происходила асинхронно в фоновой очереди,
             // то для возможности изменения интерфейса, которой работает в
             // главной очереди, нам нужно выполнить замыкание в главной очереди.
@@ -56,3 +56,15 @@ extension HTTPCommunication: URLSessionDownloadDelegate {
         }
     }
 }
+
+
+//https://finnhub.io/api/v1/quote?symbol=AAPL&token=c1d0lbf48v6p6471pmm0
+//https://finnhub.io/api/v1/search?q=apple&token=c1d0lbf48v6p6471pmm0
+//https://finnhub.io/api/v1/search?token=c1d0lbf48v6p6471pmm0
+//https://finnhub.io/api/v1/stock/profile2?symbol=AAPL&token=c1d0lbf48v6p6471pmm0
+
+// main
+//https://finnhub.io/api/v1/stock/symbol?exchange=US&token=c1d0lbf48v6p6471pmm0
+
+// next by symbol
+//https://finnhub.io/api/v1/quote?symbol=AAPL&token=c1d0lbf48v6p6471pmm0

@@ -10,9 +10,24 @@ import UIKit
 class StocksCollectionViewCell: UICollectionViewCell {
 
 	static var identifier: String = "Cell"
+	
+	var stock: Stock? {
+		didSet {
+			titleView.text = stock?.title
+			subtitleView.text = stock?.titleDescription
+			stockPrice.text = stock?.currentPrice
+			stockPriceChanging.text = stock?.priceDelta
+
+			if let stockImageName = stock?.thumbnailImageName {
+				stockImageView.image = UIImage(named: stockImageName)
+			}
+		}
+	}
 
 	let stockImageView: UIImageView  = {
 		let imageView = UIImageView(image: UIImage(named: "YNDX.png")!)
+		imageView.layer.cornerRadius = 10.0
+		imageView.layer.masksToBounds = true
 		return imageView
 	}()
 
@@ -21,6 +36,7 @@ class StocksCollectionViewCell: UICollectionViewCell {
 		textView.backgroundColor = .none
 		textView.text = "YNDX"
 		textView.font = UIFont.boldSystemFont(ofSize: 16.0)
+		textView.textColor = UIColor.init(red: 50/255, green: 50/255, blue: 50/255, alpha: 1)
 		textView.isEditable = false
 		textView.isScrollEnabled = false
 		return textView
@@ -30,6 +46,7 @@ class StocksCollectionViewCell: UICollectionViewCell {
 		let textView = UITextView()
 		textView.backgroundColor = .none
 		textView.text = "Yandex, LLC"
+		textView.textColor = UIColor.init(red: 50/255, green: 50/255, blue: 50/255, alpha: 1)
 		textView.isEditable = false
 		textView.isScrollEnabled = false
 		return textView
@@ -39,6 +56,7 @@ class StocksCollectionViewCell: UICollectionViewCell {
 		let textView = UITextView()
 		textView.backgroundColor = .none
 		textView.text = "4 764,6 ₽"
+		textView.textColor = UIColor.init(red: 50/255, green: 50/255, blue: 50/255, alpha: 1)
 		textView.isEditable = false
 		textView.isScrollEnabled = false
 		textView.font = UIFont.boldSystemFont(ofSize: 16.0)

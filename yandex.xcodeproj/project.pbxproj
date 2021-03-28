@@ -17,7 +17,19 @@
 		9F49AD34260A113400CEF00E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F49AD33260A113400CEF00E /* MainViewController.swift */; };
 		9F49AD37260A2B7F00CEF00E /* StocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F49AD36260A2B7F00CEF00E /* StocksViewController.swift */; };
 		9F49AD3B260A344300CEF00E /* StocksCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F49AD3A260A344300CEF00E /* StocksCollectionView.swift */; };
+		9F7951EA261137DC0075781E /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7951E9261137DC0075781E /* HomeAssembly.swift */; };
+		9F7951ED261138030075781E /* HomeAssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7951EC261138030075781E /* HomeAssemblyProtocol.swift */; };
+		9F7951F2261138A60075781E /* HomeRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7951F1261138A60075781E /* HomeRouterProtocol.swift */; };
+		9F7951F5261138D00075781E /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7951F4261138D00075781E /* HomeRouter.swift */; };
+		9F7951F8261139120075781E /* HomePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7951F7261139120075781E /* HomePresenterProtocol.swift */; };
+		9F7951FB261139B60075781E /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7951FA261139B60075781E /* HomePresenter.swift */; };
+		9F7951FE261139D30075781E /* HomeInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7951FD261139D30075781E /* HomeInteractorProtocol.swift */; };
+		9F795202261139FA0075781E /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F795201261139FA0075781E /* HomeInteractor.swift */; };
+		9F79520526113A220075781E /* HomeViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79520426113A220075781E /* HomeViewControllerProtocol.swift */; };
+		9F79520826113A3C0075781E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79520726113A3C0075781E /* HomeViewController.swift */; };
 		9FB58EF0260FB13300336C87 /* StocksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB58EEF260FB13300336C87 /* StocksCollectionViewCell.swift */; };
+		9FFCBE0B2610B54500AB71A8 /* FavoritePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCBE0A2610B54500AB71A8 /* FavoritePage.swift */; };
+		9FFCBE0E261125D400AB71A8 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCBE0D261125D400AB71A8 /* Stock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +45,19 @@
 		9F49AD33260A113400CEF00E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9F49AD36260A2B7F00CEF00E /* StocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksViewController.swift; sourceTree = "<group>"; };
 		9F49AD3A260A344300CEF00E /* StocksCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksCollectionView.swift; sourceTree = "<group>"; };
+		9F7951E9261137DC0075781E /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
+		9F7951EC261138030075781E /* HomeAssemblyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssemblyProtocol.swift; sourceTree = "<group>"; };
+		9F7951F1261138A60075781E /* HomeRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouterProtocol.swift; sourceTree = "<group>"; };
+		9F7951F4261138D00075781E /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		9F7951F7261139120075781E /* HomePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterProtocol.swift; sourceTree = "<group>"; };
+		9F7951FA261139B60075781E /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		9F7951FD261139D30075781E /* HomeInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorProtocol.swift; sourceTree = "<group>"; };
+		9F795201261139FA0075781E /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		9F79520426113A220075781E /* HomeViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerProtocol.swift; sourceTree = "<group>"; };
+		9F79520726113A3C0075781E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9FB58EEF260FB13300336C87 /* StocksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksCollectionViewCell.swift; sourceTree = "<group>"; };
+		9FFCBE0A2610B54500AB71A8 /* FavoritePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePage.swift; sourceTree = "<group>"; };
+		9FFCBE0D261125D400AB71A8 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +90,15 @@
 		9F49AD182609FB5B00CEF00E /* yandex */ = {
 			isa = PBXGroup;
 			children = (
+				9F7951E8261137970075781E /* Home */,
 				9F49AD192609FB5B00CEF00E /* AppDelegate.swift */,
 				9F48ED5B260FD15400C95468 /* MenuBar.swift */,
 				9F48ED5E260FD90F00C95468 /* MenuCell.swift */,
 				9F49AD36260A2B7F00CEF00E /* StocksViewController.swift */,
-				9FB58EEF260FB13300336C87 /* StocksCollectionViewCell.swift */,
+				9FFCBE0D261125D400AB71A8 /* Stock.swift */,
 				9F48ED62261090DE00C95468 /* StocksPage.swift */,
+				9FB58EEF260FB13300336C87 /* StocksCollectionViewCell.swift */,
+				9FFCBE0A2610B54500AB71A8 /* FavoritePage.swift */,
 				9F49AD222609FB5C00CEF00E /* Assets.xcassets */,
 				9F49AD3A260A344300CEF00E /* StocksCollectionView.swift */,
 				9F49AD242609FB5C00CEF00E /* LaunchScreen.storyboard */,
@@ -80,6 +107,63 @@
 				9F49AD30260A103D00CEF00E /* HTTPCommunication.swift */,
 			);
 			path = yandex;
+			sourceTree = "<group>";
+		};
+		9F7951E32611371B0075781E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9F7951F1261138A60075781E /* HomeRouterProtocol.swift */,
+				9F7951F4261138D00075781E /* HomeRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		9F7951E4261137250075781E /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		9F7951E52611372D0075781E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9F7951F7261139120075781E /* HomePresenterProtocol.swift */,
+				9F7951FA261139B60075781E /* HomePresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		9F7951E6261137460075781E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9F7951FD261139D30075781E /* HomeInteractorProtocol.swift */,
+				9F795201261139FA0075781E /* HomeInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		9F7951E7261137530075781E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F79520426113A220075781E /* HomeViewControllerProtocol.swift */,
+				9F79520726113A3C0075781E /* HomeViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9F7951E8261137970075781E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9F7951EC261138030075781E /* HomeAssemblyProtocol.swift */,
+				9F7951E9261137DC0075781E /* HomeAssembly.swift */,
+				9F7951E7261137530075781E /* View */,
+				9F7951E6261137460075781E /* Interactor */,
+				9F7951E52611372D0075781E /* Presenter */,
+				9F7951E4261137250075781E /* Entity */,
+				9F7951E32611371B0075781E /* Router */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,13 +236,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F49AD1A2609FB5B00CEF00E /* AppDelegate.swift in Sources */,
+				9F795202261139FA0075781E /* HomeInteractor.swift in Sources */,
 				9FB58EF0260FB13300336C87 /* StocksCollectionViewCell.swift in Sources */,
+				9FFCBE0B2610B54500AB71A8 /* FavoritePage.swift in Sources */,
+				9F7951ED261138030075781E /* HomeAssemblyProtocol.swift in Sources */,
+				9F79520826113A3C0075781E /* HomeViewController.swift in Sources */,
+				9F7951F5261138D00075781E /* HomeRouter.swift in Sources */,
 				9F49AD31260A103D00CEF00E /* HTTPCommunication.swift in Sources */,
 				9F48ED63261090DE00C95468 /* StocksPage.swift in Sources */,
 				9F49AD3B260A344300CEF00E /* StocksCollectionView.swift in Sources */,
+				9F7951EA261137DC0075781E /* HomeAssembly.swift in Sources */,
+				9F7951F8261139120075781E /* HomePresenterProtocol.swift in Sources */,
 				9F49AD34260A113400CEF00E /* MainViewController.swift in Sources */,
+				9F7951FB261139B60075781E /* HomePresenter.swift in Sources */,
+				9F7951F2261138A60075781E /* HomeRouterProtocol.swift in Sources */,
 				9F48ED5C260FD15400C95468 /* MenuBar.swift in Sources */,
+				9F7951FE261139D30075781E /* HomeInteractorProtocol.swift in Sources */,
 				9F48ED5F260FD90F00C95468 /* MenuCell.swift in Sources */,
+				9FFCBE0E261125D400AB71A8 /* Stock.swift in Sources */,
+				9F79520526113A220075781E /* HomeViewControllerProtocol.swift in Sources */,
 				9F49AD37260A2B7F00CEF00E /* StocksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

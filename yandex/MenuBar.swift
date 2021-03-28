@@ -47,7 +47,6 @@ class MenuBar: UIView, UICollectionViewDataSource, UICollectionViewDelegate, UIC
 
 		let selectedIndexPath = NSIndexPath(row: 0, section: 0)
 		collectionView.selectItem(at: selectedIndexPath as IndexPath, animated: false, scrollPosition: .top)
-
 		setupHorizontalLine()
 	}
 
@@ -86,8 +85,8 @@ extension MenuBar {
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! MenuCell
-//		cell.imageView.image = UIImage(named: menuIcons[indexPath.item])
-//		cell.imageView.tintColor = UIColor.init(red: 91/255, green: 14/255, blue: 13/255, alpha: 1)
+		cell.imageView.image = UIImage(named: menuIcons[indexPath.item])?.withRenderingMode(.alwaysTemplate)
+		cell.tintColor = UIColor.init(red: 91/255, green: 14/255, blue: 13/255, alpha: 1)
 		return cell
 	}
 
