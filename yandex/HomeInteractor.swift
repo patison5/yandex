@@ -8,5 +8,10 @@
 import UIKit
 
 final class HomeInteractor: HomeInteractorProtocol {
-	
+
+	weak var presenter: HomeInteractorOutputProtocol?
 }
+
+// MARK: - HomeInteractorProtocol
+
+extension HomeInteractor: HomeInteractorInputProtocol { }

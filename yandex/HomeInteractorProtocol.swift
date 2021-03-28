@@ -8,5 +8,7 @@
 import UIKit
 
 protocol HomeInteractorProtocol: AnyObject {
-
+	
+	/// Презентер модуля
+	var presenter: HomeInteractorOutputProtocol? { get set }
 }

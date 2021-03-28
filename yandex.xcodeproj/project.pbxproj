@@ -27,6 +27,15 @@
 		9F795202261139FA0075781E /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F795201261139FA0075781E /* HomeInteractor.swift */; };
 		9F79520526113A220075781E /* HomeViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79520426113A220075781E /* HomeViewControllerProtocol.swift */; };
 		9F79520826113A3C0075781E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79520726113A3C0075781E /* HomeViewController.swift */; };
+		9F79520B26113CA70075781E /* HomeInteractorOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79520A26113CA70075781E /* HomeInteractorOutputProtocol.swift */; };
+		9F79520E26113D4A0075781E /* HomeInteractorInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79520D26113D4A0075781E /* HomeInteractorInputProtocol.swift */; };
+		9F79521126113E110075781E /* HomeViewControllerInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79521026113E110075781E /* HomeViewControllerInputProtocol.swift */; };
+		9F79521426113E2E0075781E /* HomeViewControllerOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79521326113E2E0075781E /* HomeViewControllerOutputProtocol.swift */; };
+		9F79521826113ECC0075781E /* HomeViewInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79521726113ECC0075781E /* HomeViewInputProtocol.swift */; };
+		9F79521C26113EEF0075781E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79521B26113EEF0075781E /* HomeView.swift */; };
+		9F79521F26113F180075781E /* HomeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79521E26113F180075781E /* HomeViewProtocol.swift */; };
+		9F79522226113F5B0075781E /* HomeViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79522126113F5B0075781E /* HomeViewDataSource.swift */; };
+		9F79522526113F700075781E /* HomeViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79522426113F700075781E /* HomeViewDelegate.swift */; };
 		9FB58EF0260FB13300336C87 /* StocksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB58EEF260FB13300336C87 /* StocksCollectionViewCell.swift */; };
 		9FFCBE0B2610B54500AB71A8 /* FavoritePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCBE0A2610B54500AB71A8 /* FavoritePage.swift */; };
 		9FFCBE0E261125D400AB71A8 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCBE0D261125D400AB71A8 /* Stock.swift */; };
@@ -55,6 +64,15 @@
 		9F795201261139FA0075781E /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		9F79520426113A220075781E /* HomeViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerProtocol.swift; sourceTree = "<group>"; };
 		9F79520726113A3C0075781E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9F79520A26113CA70075781E /* HomeInteractorOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorOutputProtocol.swift; sourceTree = "<group>"; };
+		9F79520D26113D4A0075781E /* HomeInteractorInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorInputProtocol.swift; sourceTree = "<group>"; };
+		9F79521026113E110075781E /* HomeViewControllerInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerInputProtocol.swift; sourceTree = "<group>"; };
+		9F79521326113E2E0075781E /* HomeViewControllerOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerOutputProtocol.swift; sourceTree = "<group>"; };
+		9F79521726113ECC0075781E /* HomeViewInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewInputProtocol.swift; sourceTree = "<group>"; };
+		9F79521B26113EEF0075781E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9F79521E26113F180075781E /* HomeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocol.swift; sourceTree = "<group>"; };
+		9F79522126113F5B0075781E /* HomeViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewDataSource.swift; sourceTree = "<group>"; };
+		9F79522426113F700075781E /* HomeViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewDelegate.swift; sourceTree = "<group>"; };
 		9FB58EEF260FB13300336C87 /* StocksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksCollectionViewCell.swift; sourceTree = "<group>"; };
 		9FFCBE0A2610B54500AB71A8 /* FavoritePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePage.swift; sourceTree = "<group>"; };
 		9FFCBE0D261125D400AB71A8 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
@@ -112,8 +130,8 @@
 		9F7951E32611371B0075781E /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				9F7951F1261138A60075781E /* HomeRouterProtocol.swift */,
 				9F7951F4261138D00075781E /* HomeRouter.swift */,
+				9F7951F1261138A60075781E /* HomeRouterProtocol.swift */,
 			);
 			name = Router;
 			sourceTree = "<group>";
@@ -128,8 +146,8 @@
 		9F7951E52611372D0075781E /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				9F7951F7261139120075781E /* HomePresenterProtocol.swift */,
 				9F7951FA261139B60075781E /* HomePresenter.swift */,
+				9F7951F7261139120075781E /* HomePresenterProtocol.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -137,8 +155,10 @@
 		9F7951E6261137460075781E /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				9F7951FD261139D30075781E /* HomeInteractorProtocol.swift */,
 				9F795201261139FA0075781E /* HomeInteractor.swift */,
+				9F7951FD261139D30075781E /* HomeInteractorProtocol.swift */,
+				9F79520A26113CA70075781E /* HomeInteractorOutputProtocol.swift */,
+				9F79520D26113D4A0075781E /* HomeInteractorInputProtocol.swift */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -146,8 +166,11 @@
 		9F7951E7261137530075781E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9F79520426113A220075781E /* HomeViewControllerProtocol.swift */,
+				9F79521626113EC30075781E /* Views */,
 				9F79520726113A3C0075781E /* HomeViewController.swift */,
+				9F79520426113A220075781E /* HomeViewControllerProtocol.swift */,
+				9F79521026113E110075781E /* HomeViewControllerInputProtocol.swift */,
+				9F79521326113E2E0075781E /* HomeViewControllerOutputProtocol.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -155,8 +178,8 @@
 		9F7951E8261137970075781E /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				9F7951EC261138030075781E /* HomeAssemblyProtocol.swift */,
 				9F7951E9261137DC0075781E /* HomeAssembly.swift */,
+				9F7951EC261138030075781E /* HomeAssemblyProtocol.swift */,
 				9F7951E7261137530075781E /* View */,
 				9F7951E6261137460075781E /* Interactor */,
 				9F7951E52611372D0075781E /* Presenter */,
@@ -164,6 +187,18 @@
 				9F7951E32611371B0075781E /* Router */,
 			);
 			name = Home;
+			sourceTree = "<group>";
+		};
+		9F79521626113EC30075781E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F79521B26113EEF0075781E /* HomeView.swift */,
+				9F79521726113ECC0075781E /* HomeViewInputProtocol.swift */,
+				9F79522126113F5B0075781E /* HomeViewDataSource.swift */,
+				9F79522426113F700075781E /* HomeViewDelegate.swift */,
+				9F79521E26113F180075781E /* HomeViewProtocol.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F79521C26113EEF0075781E /* HomeView.swift in Sources */,
 				9F49AD1A2609FB5B00CEF00E /* AppDelegate.swift in Sources */,
+				9F79522526113F700075781E /* HomeViewDelegate.swift in Sources */,
 				9F795202261139FA0075781E /* HomeInteractor.swift in Sources */,
 				9FB58EF0260FB13300336C87 /* StocksCollectionViewCell.swift in Sources */,
 				9FFCBE0B2610B54500AB71A8 /* FavoritePage.swift in Sources */,
@@ -244,17 +281,24 @@
 				9F7951F5261138D00075781E /* HomeRouter.swift in Sources */,
 				9F49AD31260A103D00CEF00E /* HTTPCommunication.swift in Sources */,
 				9F48ED63261090DE00C95468 /* StocksPage.swift in Sources */,
+				9F79521426113E2E0075781E /* HomeViewControllerOutputProtocol.swift in Sources */,
+				9F79521F26113F180075781E /* HomeViewProtocol.swift in Sources */,
 				9F49AD3B260A344300CEF00E /* StocksCollectionView.swift in Sources */,
 				9F7951EA261137DC0075781E /* HomeAssembly.swift in Sources */,
 				9F7951F8261139120075781E /* HomePresenterProtocol.swift in Sources */,
 				9F49AD34260A113400CEF00E /* MainViewController.swift in Sources */,
 				9F7951FB261139B60075781E /* HomePresenter.swift in Sources */,
 				9F7951F2261138A60075781E /* HomeRouterProtocol.swift in Sources */,
+				9F79522226113F5B0075781E /* HomeViewDataSource.swift in Sources */,
+				9F79521826113ECC0075781E /* HomeViewInputProtocol.swift in Sources */,
 				9F48ED5C260FD15400C95468 /* MenuBar.swift in Sources */,
 				9F7951FE261139D30075781E /* HomeInteractorProtocol.swift in Sources */,
 				9F48ED5F260FD90F00C95468 /* MenuCell.swift in Sources */,
+				9F79521126113E110075781E /* HomeViewControllerInputProtocol.swift in Sources */,
+				9F79520B26113CA70075781E /* HomeInteractorOutputProtocol.swift in Sources */,
 				9FFCBE0E261125D400AB71A8 /* Stock.swift in Sources */,
 				9F79520526113A220075781E /* HomeViewControllerProtocol.swift in Sources */,
+				9F79520E26113D4A0075781E /* HomeInteractorInputProtocol.swift in Sources */,
 				9F49AD37260A2B7F00CEF00E /* StocksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
