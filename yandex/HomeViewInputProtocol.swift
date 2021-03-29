@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Описание вью
 protocol HomeViewInputProtocol {
-	
+
 }

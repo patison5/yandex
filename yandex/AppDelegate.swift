@@ -27,6 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		application.statusBarStyle = .lightContent
 
+		let controller1 = HomeAssembly.module()
+
 		return true
 	}
 }

@@ -24,6 +24,12 @@ final class HomePresenter: HomePresenterProtocol {
 	init(router: HomeRouterProtocol, interactor: HomeInteractorInputProtocol) {
 		self.router = router
 		self.interactor = interactor
+
+		print("presenter init")
+	}
+
+	deinit {
+		print("presenter deinit")
 	}
 }
 

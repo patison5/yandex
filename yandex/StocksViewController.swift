@@ -52,7 +52,7 @@ class StocksViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		fetchStocks()
+//		fetchStocks()
 
 		navigationItem.title = "  Stonks"
 		navigationController?.navigationBar.isTranslucent = false

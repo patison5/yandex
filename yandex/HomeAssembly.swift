@@ -13,8 +13,8 @@ final class HomeAssembly: HomeAssemblyProtocol {
 
 	static func module() -> UIViewController {
 		let view = HomeView()
-		let interactor = HomeInteractor()
 		let router = HomeRouter()
+		let interactor = HomeInteractor()
 		let presenter = HomePresenter(router: router, interactor: interactor)
 		let controller = HomeViewController(presenter: presenter, view: view)
 

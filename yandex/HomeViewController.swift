@@ -20,7 +20,12 @@ final class HomeViewController: UIViewController {
 		self.presenter = presenter
 		self.moduleView = view
 
+		print("viewcontroller init")
 		super.init(nibName: nil, bundle: nil)
+	}
+	
+	deinit {
+		print("viewcontroller deinit")
 	}
 
 	required init?(coder: NSCoder) {
