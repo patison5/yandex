@@ -50,7 +50,19 @@ final class HomeViewController: UIViewController {
 		super.viewDidLoad()
 		
 		view.backgroundColor = .white
+		setupTable()
+		
+		setupTitleLabel()
+		setupSearchBar()
+		setupMenuBar()
 
+		presenter.viewDidLoad()
+	}
+	
+	func setupTable() {
+		table.separatorStyle = .none
+		table.rowHeight = 80
+		
 		view.addSubview(table)
 		table.translatesAutoresizingMaskIntoConstraints = false
 		NSLayoutConstraint.activate([
@@ -59,17 +71,10 @@ final class HomeViewController: UIViewController {
 			table.topAnchor.constraint(equalTo: view.topAnchor),
 			table.bottomAnchor.constraint(equalTo: view.bottomAnchor)
 		])
-
 		table.register(HomeTableViewCell.self, forCellReuseIdentifier: HomeTableViewCell.identifier)
 		table.delegate = self
 		table.dataSource = self
 		table.contentInset = UIEdgeInsets(top: 50, left: 0, bottom: 0, right: 0)
-
-		setupTitleLabel()
-		setupSearchBar()
-		setupMenuBar()
-
-		presenter.viewDidLoad()
 	}
 
 	override func loadView() {
@@ -199,12 +204,13 @@ extension HomeViewController: UITableViewDataSource {
 		}
 
 		if indexPath.row % 2 == 0 {
-			customCell.backgroundColor = UIColor.init(red: 240/255, green: 240/255, blue: 240/255, alpha: 1) }
+			customCell.bg.backgroundColor = UIColor.init(red: 240/255, green: 240/255, blue: 240/255, alpha: 1) }
 		else {
-			customCell.backgroundColor = UIColor.init(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
+			customCell.bg.backgroundColor = UIColor.init(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
 		}
 
 		customCell.stock = data[indexPath.row]
+		customCell.selectionStyle = .none
 
 		return customCell
 	}

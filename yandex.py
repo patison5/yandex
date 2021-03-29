@@ -30,7 +30,7 @@ usersList["stocks"].append(Stocks(0, "YNDX", "Yandex, LLC", "4764.6", "4964.6", 
 
 @app.route('/')
 def main_root():
-    return "Hello Pidor, just go to /stocks, pidor"
+    return "Hello world"
 
 @app.route('/stocks/<int:stocks_id>')
 def show_post(stocks_id):
@@ -42,8 +42,7 @@ def show_post(stocks_id):
         stock = usersList["stocks"][int(stocks_id)]
         return json.dumps(stock, default=lambda o: o.__dict__, sort_keys=True, indent=4)
     else:
-        return "fuck you bitch"
-        # return f"No user with {user_id} found"
+         return f"No user with {user_id} found"
 
 
 @app.route('/stocks', methods=['GET', 'PUT', 'DELETE', 'POST'])

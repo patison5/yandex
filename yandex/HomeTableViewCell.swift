@@ -23,6 +23,13 @@ class HomeTableViewCell: UITableViewCell {
 			}
 		}
 	}
+	
+	let bg: UIView = {
+		let bg = UIView()
+		bg.layer.masksToBounds = true
+		bg.layer.cornerRadius = 15
+		return bg
+	}()
 
 	let stockImageView: UIImageView  = {
 		let imageView = UIImageView(image: UIImage(named: "YNDX.png")!)
@@ -89,7 +96,7 @@ class HomeTableViewCell: UITableViewCell {
 	}
 
 	func setupView() {
-		[stockImageView, titleView, subtitleView, stockPrice, stockPriceChanging].forEach {
+		[bg, stockImageView, titleView, subtitleView, stockPrice, stockPriceChanging].forEach {
 			$0.translatesAutoresizingMaskIntoConstraints = false
 			self.contentView.addSubview($0)
 		}
@@ -97,31 +104,32 @@ class HomeTableViewCell: UITableViewCell {
 
 	func setupConstraints() {
 		NSLayoutConstraint.activate([
-			stockImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
-			stockImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),
-			stockImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8),
+
+			bg.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 4),
+			bg.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
+			bg.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
+			bg.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -4),
+
+			stockImageView.topAnchor.constraint(equalTo: bg.topAnchor, constant: 8),
+			stockImageView.leadingAnchor.constraint(equalTo: bg.leadingAnchor, constant: 8),
+			stockImageView.bottomAnchor.constraint(equalTo: bg.bottomAnchor, constant: -8),
 			stockImageView.widthAnchor.constraint(equalToConstant: 52),
 
 			titleView.leadingAnchor.constraint(equalTo: stockImageView.trailingAnchor, constant: 8),
-//			titleView.widthAnchor.constraint(equalToConstant: 160),
-			titleView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
+			titleView.topAnchor.constraint(equalTo: bg.topAnchor, constant: 8),
 			titleView.heightAnchor.constraint(equalToConstant: 24),
 
-			subtitleView.topAnchor.constraint(equalTo: titleView.bottomAnchor, constant: 0),
-//			subtitleView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 8),
+			subtitleView.topAnchor.constraint(equalTo: titleView.bottomAnchor),
 			subtitleView.heightAnchor.constraint(equalToConstant: 20),
 			subtitleView.leadingAnchor.constraint(equalTo: stockImageView.trailingAnchor, constant: 8),
-//			subtitleView.widthAnchor.constraint(equalToConstant: 160),
 
-			stockPrice.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8),
-			stockPrice.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
+			stockPrice.trailingAnchor.constraint(equalTo: bg.trailingAnchor, constant: -8),
+			stockPrice.topAnchor.constraint(equalTo: bg.topAnchor, constant: 8),
 			stockPrice.heightAnchor.constraint(equalToConstant: 24),
 			
-			stockPriceChanging.topAnchor.constraint(equalTo: stockPrice.bottomAnchor, constant: 0),
-//			subtitleView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 8),
+			stockPriceChanging.topAnchor.constraint(equalTo: stockPrice.bottomAnchor),
 			stockPriceChanging.heightAnchor.constraint(equalToConstant: 20),
-			stockPriceChanging.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8),
-//			subtitleView.widthAnchor.constraint(equalToConstant: 160),
+			stockPriceChanging.trailingAnchor.constraint(equalTo: bg.trailingAnchor, constant: -8),
 		])
 	}
 }
