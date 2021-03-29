@@ -22,7 +22,15 @@ final class HomeViewController: UIViewController {
 		return mb
 	}()
 
+	lazy var searchBar: UISearchBar = {
+		let view = UISearchBar()
+		view.delegate = self
+//		view.backgroundColor = .white
+		return view
+	}()
+
 	var data: [HomeStocksModel] = []
+	var searchData: [HomeStocksModel] = []
 
 	private let titles: [String] = ["Stonks", "Favorite"]
 
@@ -87,7 +95,29 @@ final class HomeViewController: UIViewController {
 		currWidth?.isActive = true
 		let currHeight = menuBarItem.customView?.heightAnchor.constraint(equalToConstant: 24)
 		currHeight?.isActive = true
-		self.navigationItem.rightBarButtonItem = menuBarItem
+		
+		searchBar.placeholder = "Your placeholder"
+		searchBar.sizeToFit()
+		searchBar.frame = CGRect(x: 0.0, y: 0.0, width: 200, height: 20)
+		searchBar.searchBarStyle = .minimal
+
+		if let textfield = searchBar.value(forKey: "searchField") as? UITextField {
+
+			textfield.backgroundColor = UIColor.white
+			textfield.attributedPlaceholder = NSAttributedString(string: textfield.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor : UIColor.black])
+			textfield.font = UIFont.systemFont(ofSize: 12)
+
+			if let leftView = textfield.leftView as? UIImageView {
+				leftView.image = leftView.image?.withRenderingMode(.alwaysTemplate)
+				leftView.tintColor = UIColor.black
+			}
+		}
+
+		let leftNavBarButton = UIBarButtonItem(customView: searchBar)
+//		self.navigationItem.leftBarButtonItem = leftNavBarButton
+		
+		self.navigationItem.rightBarButtonItem = leftNavBarButton
+//		navigationItem.titleView = searchBar
 	}
 
 	private func setupMenuBar() {
@@ -118,7 +148,7 @@ final class HomeViewController: UIViewController {
 		print("123")
 	}
 
-	private func setTitleForIndex(index: Int) {
+	func setTitleForIndex(index: Int) {
 		if let titleLabel = navigationItem.titleView as? UILabel {
 			titleLabel.text = "  \(titles[Int(index)])"
 		}
@@ -146,6 +176,7 @@ extension HomeViewController: HomeViewControllerInputProtocol {
 
 	func getHomeModel(models: [HomeStocksModel]) {
 		data = models
+		searchData = models
 		table.reloadData()
 	}
 }
@@ -187,5 +218,33 @@ extension HomeViewController: UITableViewDelegate {
 		 closeAction.backgroundColor = .orange
 		
 		return UISwipeActionsConfiguration(actions: [closeAction])
+	}
+
+	func scrollViewDidScroll(_ scrollView: UIScrollView) {
+		if searchBar.isFirstResponder {
+			searchBar.resignFirstResponder()
+		}
+	}
+}
+
+extension HomeViewController: UISearchBarDelegate {
+
+	func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+		data = searchData
+		table.reloadData()
+	}
+
+	func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+		if searchText.isEmpty {
+			data = searchData
+		} else {
+			data = searchData.filter {
+				guard let tickerName = $0.title?.lowercased(),
+					  let companyName = $0.titleDescription?.lowercased() else { return false }
+
+				return tickerName.contains(searchText.lowercased()) || companyName.contains(searchText.lowercased())
+			}
+		}
+		table.reloadData()
 	}
 }

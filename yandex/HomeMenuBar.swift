@@ -100,7 +100,6 @@ extension HomeMenuBar {
 
 	// Клик по элементу меню
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//		parent?.scrollToMenuIntdex(menuIndex: indexPath.item)
 
 		let x = CGFloat(indexPath.item) * frame.width / 2
 		horizontalLineLeftAnchor?.constant = x
@@ -108,5 +107,7 @@ extension HomeMenuBar {
 		UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
 			self.layoutIfNeeded()
 		}, completion: nil)
+
+		parent?.setTitleForIndex(index: indexPath.item)
 	}
 }
