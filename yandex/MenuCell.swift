@@ -34,14 +34,12 @@ class MenuCell: UICollectionViewCell {
 
 	override var isHighlighted: Bool {
 		didSet {
-			print("FUCK THAT SHIT It IS HIGHLIGHTED")
 			imageView.tintColor = isHighlighted ? .white : UIColor.init(red: 91/255, green: 14/255, blue: 13/255, alpha: 1)
 		}
 	}
 
 	override var isSelected: Bool {
 		didSet {
-			print("FUCK THAT SHIT It IS SELECTED")
 			imageView.tintColor = isSelected ? .white : UIColor.init(red: 91/255, green: 14/255, blue: 13/255, alpha: 1)
 		}
 	}

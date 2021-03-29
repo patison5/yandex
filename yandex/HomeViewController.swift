@@ -48,6 +48,8 @@ final class HomeViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
+		view.backgroundColor = .white
 
 		view.addSubview(table)
 		table.translatesAutoresizingMaskIntoConstraints = false
@@ -196,7 +198,11 @@ extension HomeViewController: UITableViewDataSource {
 			return UITableViewCell()
 		}
 
-		if indexPath.row % 2 == 0 { customCell.backgroundColor = UIColor.init(red: 240/255, green: 240/255, blue: 240/255, alpha: 1) }
+		if indexPath.row % 2 == 0 {
+			customCell.backgroundColor = UIColor.init(red: 240/255, green: 240/255, blue: 240/255, alpha: 1) }
+		else {
+			customCell.backgroundColor = UIColor.init(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
+		}
 
 		customCell.stock = data[indexPath.row]
 
