@@ -6,5 +6,6 @@
 //
 
 protocol HomeViewControllerOutputProtocol: AnyObject {
-	
+
+	func viewDidLoad()
 }

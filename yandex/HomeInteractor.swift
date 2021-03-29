@@ -58,6 +58,15 @@ private extension HomeInteractor {
 		let models: [HomeStocksModel]? = [
 			HomeStocksModel(thumbnailImageName: "AAPL", title: "AAPL", titleDescription: "Apple Inc.", currentPrice: "131.93$", priceDelta: "+$0.12 (1,15%)", isFavorite: false),
 			HomeStocksModel(thumbnailImageName: "YNDX", title: "YNDX", titleDescription: "Yandex, LLC", currentPrice: "4 764,6 ₽", priceDelta: "+$0.12 (1,15%)", isFavorite: false),
+			HomeStocksModel(thumbnailImageName: "GOOGL", title: "GOOGLE", titleDescription: "Alphabet Class A", currentPrice: "$1 825", priceDelta: "+$0.12 (1,15%)", isFavorite: false),
+			HomeStocksModel(thumbnailImageName: "AAPL", title: "AAPL", titleDescription: "Apple Inc.", currentPrice: "131.93$", priceDelta: "+$0.12 (1,15%)", isFavorite: false),
+			HomeStocksModel(thumbnailImageName: "YNDX", title: "YNDX", titleDescription: "Yandex, LLC", currentPrice: "4 764,6 ₽", priceDelta: "+$0.12 (1,15%)", isFavorite: false),
+			HomeStocksModel(thumbnailImageName: "GOOGL", title: "GOOGLE", titleDescription: "Alphabet Class A", currentPrice: "$1 825", priceDelta: "+$0.12 (1,15%)", isFavorite: false),
+			HomeStocksModel(thumbnailImageName: "AAPL", title: "AAPL", titleDescription: "Apple Inc.", currentPrice: "131.93$", priceDelta: "+$0.12 (1,15%)", isFavorite: false),
+			HomeStocksModel(thumbnailImageName: "YNDX", title: "YNDX", titleDescription: "Yandex, LLC", currentPrice: "4 764,6 ₽", priceDelta: "+$0.12 (1,15%)", isFavorite: false),
+			HomeStocksModel(thumbnailImageName: "GOOGL", title: "GOOGLE", titleDescription: "Alphabet Class A", currentPrice: "$1 825", priceDelta: "+$0.12 (1,15%)", isFavorite: false),
+			HomeStocksModel(thumbnailImageName: "AAPL", title: "AAPL", titleDescription: "Apple Inc.", currentPrice: "131.93$", priceDelta: "+$0.12 (1,15%)", isFavorite: false),
+			HomeStocksModel(thumbnailImageName: "YNDX", title: "YNDX", titleDescription: "Yandex, LLC", currentPrice: "4 764,6 ₽", priceDelta: "+$0.12 (1,15%)", isFavorite: false),
 			HomeStocksModel(thumbnailImageName: "GOOGL", title: "GOOGLE", titleDescription: "Alphabet Class A", currentPrice: "$1 825", priceDelta: "+$0.12 (1,15%)", isFavorite: false)
 		]
 

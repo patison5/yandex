@@ -6,5 +6,6 @@
 //
 
 protocol HomeViewControllerInputProtocol: AnyObject {
-	
+
+	func getHomeModel(models: [HomeStocksModel])
 }

@@ -33,14 +33,19 @@ final class HomePresenter: HomePresenterProtocol {
 
 // MARK: - HomeViewControllerOutputProtocol
 
-extension HomePresenter: HomeViewControllerOutputProtocol { }
+extension HomePresenter: HomeViewControllerOutputProtocol {
+
+	func viewDidLoad() {
+		interactor.fetch(type: .apiStocks)
+	}
+}
 
 // MARK: - HomeInteractorOutputProtocol
 
 extension HomePresenter: HomeInteractorOutputProtocol {
 
 	func apiStocksFetched(models: [HomeStocksModel]) {
-		print(models.count)
+		controller?.getHomeModel(models: models)
 	}
 
 	func apiStocksFetchDidFailed() {

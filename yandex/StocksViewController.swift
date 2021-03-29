@@ -14,6 +14,7 @@ class StocksViewController: UIViewController {
 	// MARK: - Private properties
 
 	private weak var collectionView: UICollectionView!
+
 	private var data: [Int] = Array(0..<20)
 	private let titles: [String] = ["Stocks", "Favorite"]
 
@@ -58,6 +59,10 @@ class StocksViewController: UIViewController {
 		navigationController?.navigationBar.isTranslucent = false
 
 		let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width - 32, height: view.frame.height))
+
+		print(view.frame.width)
+		print(view.frame.height)
+
 		titleLabel.text = "  Stonks"
 		titleLabel.font = UIFont.systemFont(ofSize: 20)
 		titleLabel.textColor = .white
