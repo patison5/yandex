@@ -5,13 +5,12 @@
 //  Created by Fedor Penin on 29.03.2021.
 //
 
-import UIKit
+/// Описание базового вью протокола
+protocol HomeViewProtocol {
 
-protocol HomeViewProtocol: AnyObject {
-	
 	/// Источник данных вью
 	var dataSource: HomeViewDataSource? { get set }
-	
+
 	/// обработчик нажатий вье
 	var delegate: HomeViewDelegate? { get set }
 }

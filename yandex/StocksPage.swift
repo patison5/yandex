@@ -80,7 +80,7 @@ class StocksPage: UICollectionViewCell, UICollectionViewDataSource, UICollection
 		cv.delegate = self
 		return cv
 	}()
-	
+
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 

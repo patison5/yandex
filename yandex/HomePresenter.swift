@@ -5,8 +5,6 @@
 //  Created by Fedor Penin on 29.03.2021.
 //
 
-import UIKit
-
 final class HomePresenter: HomePresenterProtocol {
 
 	// MARK: - HomePresenterProtocol properties
@@ -39,4 +37,21 @@ extension HomePresenter: HomeViewControllerOutputProtocol { }
 
 // MARK: - HomeInteractorOutputProtocol
 
-extension HomePresenter: HomeInteractorOutputProtocol { }
+extension HomePresenter: HomeInteractorOutputProtocol {
+
+	func apiStocksFetched(models: [HomeStocksModel]) {
+		print(models.count)
+	}
+
+	func apiStocksFetchDidFailed() {
+		print("api fetch error")
+	}
+
+	func databaseFavoriteStocksFetched(models: [HomeStocksModel]) {
+		print(models.count)
+	}
+
+	func databaseFavoriteStocksFetchDiDFailed() {
+		print("database fetch error")
+	}
+}

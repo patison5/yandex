@@ -19,17 +19,26 @@ final class HomeViewController: UIViewController {
 	init(presenter: HomeViewControllerOutputProtocol, view: HomeViewInputProtocol) {
 		self.presenter = presenter
 		self.moduleView = view
+		super.init(nibName: nil, bundle: nil)
 
 		print("viewcontroller init")
-		super.init(nibName: nil, bundle: nil)
+		title = "Stonks"
 	}
-	
+
 	deinit {
 		print("viewcontroller deinit")
 	}
 
 	required init?(coder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
+	}
+
+	override func viewDidLoad() {
+		super.viewDidLoad()
+	}
+
+	override func loadView() {
+		self.view = moduleView
 	}
 }
 

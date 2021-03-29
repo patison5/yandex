@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Описание сборщика модуля
 protocol HomeAssemblyProtocol: AnyObject {
 
 	///	собрать модуль

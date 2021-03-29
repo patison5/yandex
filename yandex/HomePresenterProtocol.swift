@@ -5,8 +5,6 @@
 //  Created by Fedor Penin on 29.03.2021.
 //
 
-import UIKit
-
 protocol HomePresenterProtocol: AnyObject {
 
 	/// Интерактор модуля
@@ -14,7 +12,7 @@ protocol HomePresenterProtocol: AnyObject {
 
 	/// Маршрутизатор модуля
 	var router: HomeRouterProtocol { get set }
-	
+
 	/// Контроллер модуля
 	var controller: HomeViewControllerInputProtocol? { get set }
 }

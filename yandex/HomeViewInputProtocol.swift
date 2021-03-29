@@ -8,6 +8,6 @@
 import UIKit
 
 /// Описание вью
-protocol HomeViewInputProtocol {
+protocol HomeViewInputProtocol where Self: UIView {
 
 }

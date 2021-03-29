@@ -36,6 +36,9 @@
 		9F79521F26113F180075781E /* HomeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79521E26113F180075781E /* HomeViewProtocol.swift */; };
 		9F79522226113F5B0075781E /* HomeViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79522126113F5B0075781E /* HomeViewDataSource.swift */; };
 		9F79522526113F700075781E /* HomeViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79522426113F700075781E /* HomeViewDelegate.swift */; };
+		9F79522B2611D7490075781E /* HomeStocksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79522A2611D7490075781E /* HomeStocksModel.swift */; };
+		9F79522F2611FAB10075781E /* FavoriteStocksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79522E2611FAB10075781E /* FavoriteStocksModel.swift */; };
+		9F795233261207D70075781E /* HomeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F795232261207D70075781E /* HomeLayout.swift */; };
 		9FB58EF0260FB13300336C87 /* StocksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB58EEF260FB13300336C87 /* StocksCollectionViewCell.swift */; };
 		9FFCBE0B2610B54500AB71A8 /* FavoritePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCBE0A2610B54500AB71A8 /* FavoritePage.swift */; };
 		9FFCBE0E261125D400AB71A8 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCBE0D261125D400AB71A8 /* Stock.swift */; };
@@ -73,6 +76,9 @@
 		9F79521E26113F180075781E /* HomeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocol.swift; sourceTree = "<group>"; };
 		9F79522126113F5B0075781E /* HomeViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewDataSource.swift; sourceTree = "<group>"; };
 		9F79522426113F700075781E /* HomeViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewDelegate.swift; sourceTree = "<group>"; };
+		9F79522A2611D7490075781E /* HomeStocksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStocksModel.swift; sourceTree = "<group>"; };
+		9F79522E2611FAB10075781E /* FavoriteStocksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStocksModel.swift; sourceTree = "<group>"; };
+		9F795232261207D70075781E /* HomeLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLayout.swift; sourceTree = "<group>"; };
 		9FB58EEF260FB13300336C87 /* StocksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksCollectionViewCell.swift; sourceTree = "<group>"; };
 		9FFCBE0A2610B54500AB71A8 /* FavoritePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePage.swift; sourceTree = "<group>"; };
 		9FFCBE0D261125D400AB71A8 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
@@ -166,11 +172,11 @@
 		9F7951E7261137530075781E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9F79521626113EC30075781E /* Views */,
 				9F79520726113A3C0075781E /* HomeViewController.swift */,
 				9F79520426113A220075781E /* HomeViewControllerProtocol.swift */,
 				9F79521026113E110075781E /* HomeViewControllerInputProtocol.swift */,
 				9F79521326113E2E0075781E /* HomeViewControllerOutputProtocol.swift */,
+				9F79521626113EC30075781E /* Views */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -184,6 +190,7 @@
 				9F7951E6261137460075781E /* Interactor */,
 				9F7951E52611372D0075781E /* Presenter */,
 				9F7951E4261137250075781E /* Entity */,
+				9F7952292611D7130075781E /* Models */,
 				9F7951E32611371B0075781E /* Router */,
 			);
 			name = Home;
@@ -192,6 +199,7 @@
 		9F79521626113EC30075781E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9F7952312612074A0075781E /* Layouts */,
 				9F79521B26113EEF0075781E /* HomeView.swift */,
 				9F79521726113ECC0075781E /* HomeViewInputProtocol.swift */,
 				9F79522126113F5B0075781E /* HomeViewDataSource.swift */,
@@ -199,6 +207,23 @@
 				9F79521E26113F180075781E /* HomeViewProtocol.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		9F7952292611D7130075781E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F79522A2611D7490075781E /* HomeStocksModel.swift */,
+				9F79522E2611FAB10075781E /* FavoriteStocksModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9F7952312612074A0075781E /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				9F795232261207D70075781E /* HomeLayout.swift */,
+			);
+			name = Layouts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +305,7 @@
 				9F79520826113A3C0075781E /* HomeViewController.swift in Sources */,
 				9F7951F5261138D00075781E /* HomeRouter.swift in Sources */,
 				9F49AD31260A103D00CEF00E /* HTTPCommunication.swift in Sources */,
+				9F79522B2611D7490075781E /* HomeStocksModel.swift in Sources */,
 				9F48ED63261090DE00C95468 /* StocksPage.swift in Sources */,
 				9F79521426113E2E0075781E /* HomeViewControllerOutputProtocol.swift in Sources */,
 				9F79521F26113F180075781E /* HomeViewProtocol.swift in Sources */,
@@ -294,9 +320,11 @@
 				9F48ED5C260FD15400C95468 /* MenuBar.swift in Sources */,
 				9F7951FE261139D30075781E /* HomeInteractorProtocol.swift in Sources */,
 				9F48ED5F260FD90F00C95468 /* MenuCell.swift in Sources */,
+				9F795233261207D70075781E /* HomeLayout.swift in Sources */,
 				9F79521126113E110075781E /* HomeViewControllerInputProtocol.swift in Sources */,
 				9F79520B26113CA70075781E /* HomeInteractorOutputProtocol.swift in Sources */,
 				9FFCBE0E261125D400AB71A8 /* Stock.swift in Sources */,
+				9F79522F2611FAB10075781E /* FavoriteStocksModel.swift in Sources */,
 				9F79520526113A220075781E /* HomeViewControllerProtocol.swift in Sources */,
 				9F79520E26113D4A0075781E /* HomeInteractorInputProtocol.swift in Sources */,
 				9F49AD37260A2B7F00CEF00E /* StocksViewController.swift in Sources */,
