@@ -5,6 +5,8 @@
 //  Created by Fedor Penin on 29.03.2021.
 //
 
+import Foundation
+
 final class HomePresenter: HomePresenterProtocol {
 
 	// MARK: - HomePresenterProtocol properties
@@ -45,6 +47,12 @@ extension HomePresenter: HomeViewControllerOutputProtocol {
 extension HomePresenter: HomeInteractorOutputProtocol {
 
 	func apiStocksFetched(models: [HomeStocksModel]) {
+		guard Thread.isMainThread else {
+			DispatchQueue.main.async { [weak self] in
+				self?.apiStocksFetched(models: models)
+			}
+			return
+		}
 		controller?.getHomeModel(models: models)
 	}
 

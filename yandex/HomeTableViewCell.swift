@@ -16,6 +16,15 @@ class HomeTableViewCell: UITableViewCell {
 			titleView.text = stock?.title
 			subtitleView.text = stock?.titleDescription
 			stockPrice.text = stock?.currentPrice
+
+			
+			
+			if let priceDelta = stock?.priceDelta {
+				if priceDelta.prefix(1) == "-" {
+					stockPriceChanging.textColor = UIColor.init(red: 230/255, green: 32/255, blue: 31/255, alpha: 1)
+				}
+			}
+
 			stockPriceChanging.text = stock?.priceDelta
 
 			if let stockImageName = stock?.thumbnailImageName {

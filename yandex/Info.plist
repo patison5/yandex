@@ -47,20 +47,32 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+<!--	<key>NSAppTransportSecurity</key>-->
+<!--	<dict>-->
+<!--		<key>NSAllowsArbitraryLoads</key>-->
+<!--		<false/>-->
+<!--		<key>NSExceptionDomains</key>-->
+<!--		<dict>-->
+<!--			<key>api.icndb.com</key>-->
+<!--			<dict>-->
+<!--				<key>NSExceptionAllowsInsecureHTTPLoads</key>-->
+<!--				<true/>-->
+<!--				<key>NSIncludesSubdomains</key>-->
+<!--				<true/>-->
+<!--			</dict>-->
+<!--			<key>127.0.0.1:5000</key>-->
+<!--			<dict>-->
+<!--				<key>NSExceptionAllowsInsecureHTTPLoads</key>-->
+<!--				<true/>-->
+<!--				<key>NSIncludesSubdomains</key>-->
+<!--				<true/>-->
+<!--			</dict>-->
+<!--		</dict>-->
+<!--	</dict>-->
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
-		<false/>
-		<key>NSExceptionDomains</key>
-		<dict>
-			<key>api.icndb.com</key>
-			<dict>
-				<key>NSExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
-				<key>NSIncludesSubdomains</key>
-				<true/>
-			</dict>
-		</dict>
+		<true/>
 	</dict>
 </dict>
 </plist>
