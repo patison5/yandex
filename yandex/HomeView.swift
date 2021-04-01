@@ -18,12 +18,6 @@ final class HomeView: UIView {
 
 	init() {
 		super.init(frame: .zero)
-
-		print("View init")
-	}
-
-	deinit {
-		print("view deinit")
 	}
 
 	required init?(coder: NSCoder) {

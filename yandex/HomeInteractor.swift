@@ -18,13 +18,7 @@ final class HomeInteractor: HomeInteractorProtocol {
 		return service
 	}()
 
-	init() {
-		print("interactor init")
-	}
-
-	deinit {
-		print("interactor deinit")
-	}
+	init() { }
 }
 
 // MARK: - HomeInteractorProtocol
@@ -48,36 +42,18 @@ extension HomeInteractor: HomeInteractorInputProtocol {
 private extension HomeInteractor {
 
 	func getApiStocks() {
-		let models: [HomeStocksModel]? = []
-
 		apiService.getStocks()
-
-		if let models = models {
-			presenter?.apiStocksFetched(models: models)
-		} else {
-			presenter?.apiStocksFetchDidFailed()
-		}
 	}
 
 	func getFavoriteStocks() {
-		let models: [HomeStocksModel]? = [
-			HomeStocksModel(thumbnailImageName: "AAPL", title: "AAPL", titleDescription: "Apple Inc.", currentPrice: "131.93$", priceDelta: "+$0.12 (1,15%)", isFavorite: false),
-			HomeStocksModel(thumbnailImageName: "YNDX", title: "YNDX", titleDescription: "Yandex, LLC", currentPrice: "4 764,6 ₽", priceDelta: "+$0.12 (1,15%)", isFavorite: false),
-			HomeStocksModel(thumbnailImageName: "GOOGL", title: "GOOGLE", titleDescription: "Alphabet Class A", currentPrice: "$1 825", priceDelta: "+$0.12 (1,15%)", isFavorite: false)
-		]
-
-		if let models = models {
-			presenter?.apiStocksFetched(models: models)
-		} else {
-			presenter?.apiStocksFetchDidFailed()
-		}
+		apiService.getStocks()
 	}
 }
 
 extension HomeInteractor: ApiServiceDelegate {
 	func stocksDidFetched(model: ApiStockModel?, error: ApiError?) {
 		if let error = error {
-			print(error)
+			presenter?.apiStocksFetchDidFailed(error: error.rawValue)
 			return
 		}
 
@@ -89,16 +65,6 @@ extension HomeInteractor: ApiServiceDelegate {
 			let sign = (priceDelta > 0) ? "" : "-"
 			let priceDeltaStr = String(format: "\(sign)\($0.currency)%.2f", abs(priceDelta))
 			let deltaPercentStr = String(format: "%.2f", abs(priceDelta / $0.previousPrice))
-			
-//			let url = NSURL(string: $0.imageURL)
-//			URLSession.shared.dataTask(with: url! as URL, completionHandler: { (data, response, error) in
-//				if error != nil {
-//					print(error)
-//					return
-//				}
-//
-//				print(data)
-//			}).resume()
 
 			return HomeStocksModel(thumbnailImageName: $0.imageURL, title: $0.companyName, titleDescription: $0.companyFullName, currentPrice: "\($0.currency)\(currentPrice)", priceDelta: "\(priceDeltaStr) (\(deltaPercentStr)%)", isFavorite: false)
 		}

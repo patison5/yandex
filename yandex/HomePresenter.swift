@@ -24,12 +24,6 @@ final class HomePresenter: HomePresenterProtocol {
 	init(router: HomeRouterProtocol, interactor: HomeInteractorInputProtocol) {
 		self.router = router
 		self.interactor = interactor
-
-		print("presenter init")
-	}
-
-	deinit {
-		print("presenter deinit")
 	}
 }
 
@@ -56,8 +50,8 @@ extension HomePresenter: HomeInteractorOutputProtocol {
 		controller?.getHomeModel(models: models)
 	}
 
-	func apiStocksFetchDidFailed() {
-		print("api fetch error")
+	func apiStocksFetchDidFailed(error: String) {
+		controller?.getHomeModelFailed(error: error)
 	}
 
 	func databaseFavoriteStocksFetched(models: [HomeStocksModel]) {

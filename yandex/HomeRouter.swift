@@ -9,11 +9,5 @@ import UIKit
 
 final class HomeRouter: HomeRouterProtocol {
 
-	init() {
-		print("router init")
-	}
-
-	deinit {
-		print("router deinit")
-	}
+	init() { }
 }

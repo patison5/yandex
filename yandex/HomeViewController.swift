@@ -103,7 +103,7 @@ final class HomeViewController: UIViewController {
 		let currHeight = menuBarItem.customView?.heightAnchor.constraint(equalToConstant: 24)
 		currHeight?.isActive = true
 		
-		searchBar.placeholder = "Your placeholder"
+		searchBar.placeholder = "Поиск"
 		searchBar.sizeToFit()
 		searchBar.frame = CGRect(x: 0.0, y: 0.0, width: 200, height: 20)
 		searchBar.searchBarStyle = .minimal
@@ -186,6 +186,10 @@ extension HomeViewController: HomeViewControllerInputProtocol {
 		searchData = models
 		table.reloadData()
 	}
+
+	func getHomeModelFailed(error: String) {
+		print("ERROR: \(error)")
+	}
 }
 
 // MARK: - UITableViewDataSource
@@ -222,13 +226,14 @@ extension HomeViewController: UITableViewDelegate {
 
 	func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
 		print(indexPath.item)
+
 		let closeAction = UIContextualAction(style: .normal, title:  "В Избранное", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
 			 print("OK, marked as Closed")
 			 success(true)
 		 })
 		 closeAction.image = UIImage(named: "tick")
 		 closeAction.backgroundColor = .orange
-		
+
 		return UISwipeActionsConfiguration(actions: [closeAction])
 	}
 

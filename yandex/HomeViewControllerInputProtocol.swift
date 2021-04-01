@@ -8,4 +8,6 @@
 protocol HomeViewControllerInputProtocol: AnyObject {
 
 	func getHomeModel(models: [HomeStocksModel])
+
+	func getHomeModelFailed(error: String)
 }

@@ -12,7 +12,7 @@ protocol HomeInteractorOutputProtocol: AnyObject {
 	func apiStocksFetched(models: [HomeStocksModel])
 
 	/// Обработать ошибку  выполнения API запроса для получения списка акций
-	func apiStocksFetchDidFailed()
+	func apiStocksFetchDidFailed(error: String)
 
 	/// Получить список избранных акций из базы данных
 	/// - Parameter models: Список акций
