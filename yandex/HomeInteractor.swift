@@ -89,8 +89,18 @@ extension HomeInteractor: ApiServiceDelegate {
 			let sign = (priceDelta > 0) ? "" : "-"
 			let priceDeltaStr = String(format: "\(sign)\($0.currency)%.2f", abs(priceDelta))
 			let deltaPercentStr = String(format: "%.2f", abs(priceDelta / $0.previousPrice))
+			
+//			let url = NSURL(string: $0.imageURL)
+//			URLSession.shared.dataTask(with: url! as URL, completionHandler: { (data, response, error) in
+//				if error != nil {
+//					print(error)
+//					return
+//				}
+//
+//				print(data)
+//			}).resume()
 
-			return HomeStocksModel(thumbnailImageName: "AAPL", title: $0.companyName, titleDescription: $0.companyFullName, currentPrice: "\($0.currency)\(currentPrice)", priceDelta: "\(priceDeltaStr) (\(deltaPercentStr)%)", isFavorite: false)
+			return HomeStocksModel(thumbnailImageName: $0.imageURL, title: $0.companyName, titleDescription: $0.companyFullName, currentPrice: "\($0.currency)\(currentPrice)", priceDelta: "\(priceDeltaStr) (\(deltaPercentStr)%)", isFavorite: false)
 		}
 
 		presenter?.apiStocksFetched(models: models)

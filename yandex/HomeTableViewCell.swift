@@ -17,22 +17,25 @@ class HomeTableViewCell: UITableViewCell {
 			subtitleView.text = stock?.titleDescription
 			stockPrice.text = stock?.currentPrice
 
-			
-			
 			if let priceDelta = stock?.priceDelta {
+				stockPriceChanging.text = priceDelta
+
 				if priceDelta.prefix(1) == "-" {
 					stockPriceChanging.textColor = UIColor.init(red: 230/255, green: 32/255, blue: 31/255, alpha: 1)
+				} else {
+					stockPriceChanging.textColor = UIColor.init(red: 36/255, green: 178/255, blue: 93/255, alpha: 1)
 				}
 			}
 
-			stockPriceChanging.text = stock?.priceDelta
-
 			if let stockImageName = stock?.thumbnailImageName {
-				stockImageView.image = UIImage(named: stockImageName)
+				let url = NSURL(string: stockImageName)
+				if let url = url {
+					stockImageView.loadFromUrl(url: url as URL)
+				}
 			}
 		}
 	}
-	
+
 	let bg: UIView = {
 		let bg = UIView()
 		bg.layer.masksToBounds = true
@@ -40,8 +43,8 @@ class HomeTableViewCell: UITableViewCell {
 		return bg
 	}()
 
-	let stockImageView: UIImageView  = {
-		let imageView = UIImageView(image: UIImage(named: "YNDX.png")!)
+	let stockImageView: CustomUIImageView  = {
+		let imageView = CustomUIImageView(image: UIImage(named: "YNDX.png")!)
 		imageView.layer.cornerRadius = 10.0
 		imageView.layer.masksToBounds = true
 		return imageView

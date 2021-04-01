@@ -11,16 +11,11 @@
 		9F0970CA2614740900B53858 /* ApiServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0970C92614740900B53858 /* ApiServiceDelegate.swift */; };
 		9F0970CD2614747500B53858 /* ApiStockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0970CC2614747500B53858 /* ApiStockModel.swift */; };
 		9F0970D126148A5E00B53858 /* ApiEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0970D026148A5E00B53858 /* ApiEndPoint.swift */; };
-		9F48ED5C260FD15400C95468 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48ED5B260FD15400C95468 /* MenuBar.swift */; };
+		9F18C2622615F4BD0073DF4C /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F18C2612615F4BD0073DF4C /* UIImageViewExtension.swift */; };
 		9F48ED5F260FD90F00C95468 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48ED5E260FD90F00C95468 /* MenuCell.swift */; };
-		9F48ED63261090DE00C95468 /* StocksPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48ED62261090DE00C95468 /* StocksPage.swift */; };
 		9F49AD1A2609FB5B00CEF00E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F49AD192609FB5B00CEF00E /* AppDelegate.swift */; };
 		9F49AD232609FB5C00CEF00E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F49AD222609FB5C00CEF00E /* Assets.xcassets */; };
 		9F49AD262609FB5C00CEF00E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F49AD242609FB5C00CEF00E /* LaunchScreen.storyboard */; };
-		9F49AD31260A103D00CEF00E /* HTTPCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F49AD30260A103D00CEF00E /* HTTPCommunication.swift */; };
-		9F49AD34260A113400CEF00E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F49AD33260A113400CEF00E /* MainViewController.swift */; };
-		9F49AD37260A2B7F00CEF00E /* StocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F49AD36260A2B7F00CEF00E /* StocksViewController.swift */; };
-		9F49AD3B260A344300CEF00E /* StocksCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F49AD3A260A344300CEF00E /* StocksCollectionView.swift */; };
 		9F7951EA261137DC0075781E /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7951E9261137DC0075781E /* HomeAssembly.swift */; };
 		9F7951ED261138030075781E /* HomeAssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7951EC261138030075781E /* HomeAssemblyProtocol.swift */; };
 		9F7951F2261138A60075781E /* HomeRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7951F1261138A60075781E /* HomeRouterProtocol.swift */; };
@@ -46,9 +41,6 @@
 		9F79523626121C080075781E /* HomeMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79523526121C080075781E /* HomeMenuBar.swift */; };
 		9F795239261229CD0075781E /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F795238261229CD0075781E /* HomeTableViewCell.swift */; };
 		9F79523C261237B50075781E /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79523B261237B50075781E /* ApiService.swift */; };
-		9FB58EF0260FB13300336C87 /* StocksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB58EEF260FB13300336C87 /* StocksCollectionViewCell.swift */; };
-		9FFCBE0B2610B54500AB71A8 /* FavoritePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCBE0A2610B54500AB71A8 /* FavoritePage.swift */; };
-		9FFCBE0E261125D400AB71A8 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCBE0D261125D400AB71A8 /* Stock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,18 +48,13 @@
 		9F0970C92614740900B53858 /* ApiServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceDelegate.swift; sourceTree = "<group>"; };
 		9F0970CC2614747500B53858 /* ApiStockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiStockModel.swift; sourceTree = "<group>"; };
 		9F0970D026148A5E00B53858 /* ApiEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndPoint.swift; sourceTree = "<group>"; };
-		9F48ED5B260FD15400C95468 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		9F18C2612615F4BD0073DF4C /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		9F48ED5E260FD90F00C95468 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
-		9F48ED62261090DE00C95468 /* StocksPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksPage.swift; sourceTree = "<group>"; };
 		9F49AD162609FB5B00CEF00E /* yandex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yandex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F49AD192609FB5B00CEF00E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F49AD222609FB5C00CEF00E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F49AD252609FB5C00CEF00E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F49AD272609FB5C00CEF00E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F49AD30260A103D00CEF00E /* HTTPCommunication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPCommunication.swift; sourceTree = "<group>"; };
-		9F49AD33260A113400CEF00E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		9F49AD36260A2B7F00CEF00E /* StocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksViewController.swift; sourceTree = "<group>"; };
-		9F49AD3A260A344300CEF00E /* StocksCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksCollectionView.swift; sourceTree = "<group>"; };
 		9F7951E9261137DC0075781E /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
 		9F7951EC261138030075781E /* HomeAssemblyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssemblyProtocol.swift; sourceTree = "<group>"; };
 		9F7951F1261138A60075781E /* HomeRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouterProtocol.swift; sourceTree = "<group>"; };
@@ -93,9 +80,6 @@
 		9F79523526121C080075781E /* HomeMenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuBar.swift; sourceTree = "<group>"; };
 		9F795238261229CD0075781E /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		9F79523B261237B50075781E /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
-		9FB58EEF260FB13300336C87 /* StocksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksCollectionViewCell.swift; sourceTree = "<group>"; };
-		9FFCBE0A2610B54500AB71A8 /* FavoritePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePage.swift; sourceTree = "<group>"; };
-		9FFCBE0D261125D400AB71A8 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +121,14 @@
 			name = Entities;
 			sourceTree = "<group>";
 		};
+		9F18C2642615F5B90073DF4C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9F18C2612615F4BD0073DF4C /* UIImageViewExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		9F49AD0D2609FB5B00CEF00E = {
 			isa = PBXGroup;
 			children = (
@@ -156,21 +148,13 @@
 		9F49AD182609FB5B00CEF00E /* yandex */ = {
 			isa = PBXGroup;
 			children = (
+				9F18C2642615F5B90073DF4C /* Extensions */,
 				9F7951E8261137970075781E /* Home */,
 				9F49AD192609FB5B00CEF00E /* AppDelegate.swift */,
-				9F48ED5B260FD15400C95468 /* MenuBar.swift */,
 				9F48ED5E260FD90F00C95468 /* MenuCell.swift */,
-				9F49AD36260A2B7F00CEF00E /* StocksViewController.swift */,
-				9FFCBE0D261125D400AB71A8 /* Stock.swift */,
-				9F48ED62261090DE00C95468 /* StocksPage.swift */,
-				9FB58EEF260FB13300336C87 /* StocksCollectionViewCell.swift */,
-				9FFCBE0A2610B54500AB71A8 /* FavoritePage.swift */,
 				9F49AD222609FB5C00CEF00E /* Assets.xcassets */,
-				9F49AD3A260A344300CEF00E /* StocksCollectionView.swift */,
 				9F49AD242609FB5C00CEF00E /* LaunchScreen.storyboard */,
 				9F49AD272609FB5C00CEF00E /* Info.plist */,
-				9F49AD33260A113400CEF00E /* MainViewController.swift */,
-				9F49AD30260A103D00CEF00E /* HTTPCommunication.swift */,
 			);
 			path = yandex;
 			sourceTree = "<group>";
@@ -345,41 +329,33 @@
 				9F0970CD2614747500B53858 /* ApiStockModel.swift in Sources */,
 				9F79522526113F700075781E /* HomeViewDelegate.swift in Sources */,
 				9F795202261139FA0075781E /* HomeInteractor.swift in Sources */,
-				9FB58EF0260FB13300336C87 /* StocksCollectionViewCell.swift in Sources */,
-				9FFCBE0B2610B54500AB71A8 /* FavoritePage.swift in Sources */,
 				9F7951ED261138030075781E /* HomeAssemblyProtocol.swift in Sources */,
 				9F79520826113A3C0075781E /* HomeViewController.swift in Sources */,
 				9F7951F5261138D00075781E /* HomeRouter.swift in Sources */,
-				9F49AD31260A103D00CEF00E /* HTTPCommunication.swift in Sources */,
 				9F79522B2611D7490075781E /* HomeStocksModel.swift in Sources */,
-				9F48ED63261090DE00C95468 /* StocksPage.swift in Sources */,
 				9F79521426113E2E0075781E /* HomeViewControllerOutputProtocol.swift in Sources */,
 				9F79521F26113F180075781E /* HomeViewProtocol.swift in Sources */,
 				9F0970D126148A5E00B53858 /* ApiEndPoint.swift in Sources */,
-				9F49AD3B260A344300CEF00E /* StocksCollectionView.swift in Sources */,
 				9F7951EA261137DC0075781E /* HomeAssembly.swift in Sources */,
 				9F795239261229CD0075781E /* HomeTableViewCell.swift in Sources */,
 				9F7951F8261139120075781E /* HomePresenterProtocol.swift in Sources */,
-				9F49AD34260A113400CEF00E /* MainViewController.swift in Sources */,
+				9F18C2622615F4BD0073DF4C /* UIImageViewExtension.swift in Sources */,
 				9F7951FB261139B60075781E /* HomePresenter.swift in Sources */,
 				9F7951F2261138A60075781E /* HomeRouterProtocol.swift in Sources */,
 				9F79522226113F5B0075781E /* HomeViewDataSource.swift in Sources */,
 				9F79521826113ECC0075781E /* HomeViewInputProtocol.swift in Sources */,
 				9F0970CA2614740900B53858 /* ApiServiceDelegate.swift in Sources */,
-				9F48ED5C260FD15400C95468 /* MenuBar.swift in Sources */,
 				9F7951FE261139D30075781E /* HomeInteractorProtocol.swift in Sources */,
 				9F48ED5F260FD90F00C95468 /* MenuCell.swift in Sources */,
 				9F795233261207D70075781E /* HomeLayout.swift in Sources */,
 				9F79521126113E110075781E /* HomeViewControllerInputProtocol.swift in Sources */,
 				9F79520B26113CA70075781E /* HomeInteractorOutputProtocol.swift in Sources */,
-				9FFCBE0E261125D400AB71A8 /* Stock.swift in Sources */,
 				9F0970C7261473C300B53858 /* ApiServiceProtocol.swift in Sources */,
 				9F79523626121C080075781E /* HomeMenuBar.swift in Sources */,
 				9F79522F2611FAB10075781E /* FavoriteStocksModel.swift in Sources */,
 				9F79520526113A220075781E /* HomeViewControllerProtocol.swift in Sources */,
 				9F79520E26113D4A0075781E /* HomeInteractorInputProtocol.swift in Sources */,
 				9F79523C261237B50075781E /* ApiService.swift in Sources */,
-				9F49AD37260A2B7F00CEF00E /* StocksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

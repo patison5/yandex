@@ -109,5 +109,7 @@ extension HomeMenuBar {
 		}, completion: nil)
 
 		parent?.setTitleForIndex(index: indexPath.item)
+
+		print("Кликнул по панели меню")
 	}
 }
