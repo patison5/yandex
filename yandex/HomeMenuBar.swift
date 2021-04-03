@@ -16,7 +16,7 @@ class HomeMenuBar: UIView, UICollectionViewDataSource, UICollectionViewDelegate,
 
 	let menuIcons = ["home", "favorite"]
 
-	var parent: HomeViewController?
+	var parent: HomeViewControllerInputProtocol?
 
 	lazy var collectionView: UICollectionView = {
 		let layout = UICollectionViewFlowLayout()
@@ -109,7 +109,6 @@ extension HomeMenuBar {
 		}, completion: nil)
 
 		parent?.setTitleForIndex(index: indexPath.item)
-
-		print("Кликнул по панели меню")
+		parent?.menuItemDidClicked(index: indexPath.item)
 	}
 }

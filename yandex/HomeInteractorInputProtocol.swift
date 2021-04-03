@@ -16,7 +16,7 @@ protocol HomeInteractorInputProtocol: AnyObject {
 	/// - Parameter type: тип запроса
 	func fetch(type: DataType)
 
-	/// Отфильтровать акции
-	/// - Parameter str: подстрока поиска
-	func filterApiStocks(str: String)
+	/// Добавить акцию в избранное
+	/// - Parameter model: модель акции
+	func addFavoriteStock(model: StockModel)
 }

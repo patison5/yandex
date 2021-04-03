@@ -29,8 +29,8 @@ final class HomeViewController: UIViewController {
 		return view
 	}()
 
-	var data: [HomeStocksModel] = []
-	var searchData: [HomeStocksModel] = []
+	var data: [StockModel] = []
+	var searchData: [StockModel] = []
 
 	private let titles: [String] = ["Stonks", "Favorite"]
 
@@ -154,12 +154,6 @@ final class HomeViewController: UIViewController {
 	@objc func handleSearch() {
 		print("123")
 	}
-
-	func setTitleForIndex(index: Int) {
-		if let titleLabel = navigationItem.titleView as? UILabel {
-			titleLabel.text = "  \(titles[Int(index)])"
-		}
-	}
 }
 
 // MARK: - HomeViewControllerProtocol
@@ -181,14 +175,36 @@ extension HomeViewController: HomeViewDataSource {
 
 extension HomeViewController: HomeViewControllerInputProtocol {
 
-	func getHomeModel(models: [HomeStocksModel]) {
+	func HomeModelFetched(models: [StockModel]) {
 		data = models
 		searchData = models
 		table.reloadData()
+		DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) { [weak self] in
+			guard let self = self else { return }
+//			self.data = Array(self.data[1...5])
+////			self.table.reloadData()
+////			let paths = [0, 1, 2, 3, 4].compactMap { IndexPath(row: $0, section: 0) }
+			self.table.reloadSections(.init(integer: 0), with: .automatic)
+		}
 	}
 
-	func getHomeModelFailed(error: String) {
+	func HomeModelFetchedFailed(error: String) {
 		print("ERROR: \(error)")
+	}
+
+	func setTitleForIndex(index: Int) {
+		if let titleLabel = navigationItem.titleView as? UILabel {
+			titleLabel.text = "  \(titles[Int(index)])"
+		}
+	}
+
+	func menuItemDidClicked(index: Int) {
+		print("cliced at \(index)")
+		if (index == 1) {
+			presenter.fetchFavoriteStocks()
+		} else {
+			presenter.viewDidLoad()
+		}
 	}
 }
 
@@ -225,12 +241,15 @@ extension HomeViewController: UITableViewDataSource {
 extension HomeViewController: UITableViewDelegate {
 
 	func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-		print(indexPath.item)
 
-		let closeAction = UIContextualAction(style: .normal, title:  "В Избранное", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
-			 print("OK, marked as Closed")
-			 success(true)
+		let closeAction = UIContextualAction(style: .normal, title:  "В Избранное", handler: {
+			[weak self] (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+			if let model = self?.data[indexPath.item] {
+				self?.presenter.addFavoriteStock(model: model)
+			}
+			success(true)
 		 })
+
 		 closeAction.image = UIImage(named: "tick")
 		 closeAction.backgroundColor = .orange
 

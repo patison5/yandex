@@ -31,8 +31,16 @@ final class HomePresenter: HomePresenterProtocol {
 
 extension HomePresenter: HomeViewControllerOutputProtocol {
 
+	func addFavoriteStock(model: StockModel) {
+		interactor.addFavoriteStock(model: model)
+	}
+
 	func viewDidLoad() {
 		interactor.fetch(type: .apiStocks)
+	}
+
+	func fetchFavoriteStocks() {
+		interactor.fetch(type: .databaseFavoriteStocks)
 	}
 }
 
@@ -40,21 +48,21 @@ extension HomePresenter: HomeViewControllerOutputProtocol {
 
 extension HomePresenter: HomeInteractorOutputProtocol {
 
-	func apiStocksFetched(models: [HomeStocksModel]) {
+	func apiStocksFetched(models: [StockModel]) {
 		guard Thread.isMainThread else {
 			DispatchQueue.main.async { [weak self] in
 				self?.apiStocksFetched(models: models)
 			}
 			return
 		}
-		controller?.getHomeModel(models: models)
+		controller?.HomeModelFetched(models: models)
 	}
 
 	func apiStocksFetchDidFailed(error: String) {
-		controller?.getHomeModelFailed(error: error)
+		controller?.HomeModelFetchedFailed(error: error)
 	}
 
-	func databaseFavoriteStocksFetched(models: [HomeStocksModel]) {
+	func databaseFavoriteStocksFetched(models: [StockModel]) {
 		print(models.count)
 	}
 

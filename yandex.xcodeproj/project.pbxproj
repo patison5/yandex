@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B7418F25BCEF5A493DC3332 /* Pods_yandex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FBC78DF722C97E0433EC8D /* Pods_yandex.framework */; };
 		9F0970C7261473C300B53858 /* ApiServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0970C6261473C300B53858 /* ApiServiceProtocol.swift */; };
 		9F0970CA2614740900B53858 /* ApiServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0970C92614740900B53858 /* ApiServiceDelegate.swift */; };
 		9F0970CD2614747500B53858 /* ApiStockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0970CC2614747500B53858 /* ApiStockModel.swift */; };
@@ -16,6 +17,7 @@
 		9F49AD1A2609FB5B00CEF00E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F49AD192609FB5B00CEF00E /* AppDelegate.swift */; };
 		9F49AD232609FB5C00CEF00E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F49AD222609FB5C00CEF00E /* Assets.xcassets */; };
 		9F49AD262609FB5C00CEF00E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F49AD242609FB5C00CEF00E /* LaunchScreen.storyboard */; };
+		9F60B9E82618DA080027C5BB /* StockModel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F60B9E72618DA080027C5BB /* StockModel+Extensions.swift */; };
 		9F7951EA261137DC0075781E /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7951E9261137DC0075781E /* HomeAssembly.swift */; };
 		9F7951ED261138030075781E /* HomeAssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7951EC261138030075781E /* HomeAssemblyProtocol.swift */; };
 		9F7951F2261138A60075781E /* HomeRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7951F1261138A60075781E /* HomeRouterProtocol.swift */; };
@@ -35,15 +37,21 @@
 		9F79521F26113F180075781E /* HomeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79521E26113F180075781E /* HomeViewProtocol.swift */; };
 		9F79522226113F5B0075781E /* HomeViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79522126113F5B0075781E /* HomeViewDataSource.swift */; };
 		9F79522526113F700075781E /* HomeViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79522426113F700075781E /* HomeViewDelegate.swift */; };
-		9F79522B2611D7490075781E /* HomeStocksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79522A2611D7490075781E /* HomeStocksModel.swift */; };
-		9F79522F2611FAB10075781E /* FavoriteStocksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79522E2611FAB10075781E /* FavoriteStocksModel.swift */; };
+		9F79522B2611D7490075781E /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79522A2611D7490075781E /* StockModel.swift */; };
 		9F795233261207D70075781E /* HomeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F795232261207D70075781E /* HomeLayout.swift */; };
 		9F79523626121C080075781E /* HomeMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79523526121C080075781E /* HomeMenuBar.swift */; };
 		9F795239261229CD0075781E /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F795238261229CD0075781E /* HomeTableViewCell.swift */; };
 		9F79523C261237B50075781E /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79523B261237B50075781E /* ApiService.swift */; };
+		9FF519B52617152700235080 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF519B42617152700235080 /* Realm */; };
+		9FF519B72617152700235080 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF519B62617152700235080 /* RealmSwift */; };
+		9FF519BD26171C6400235080 /* FavoriteStockEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF519BC26171C6400235080 /* FavoriteStockEntity.swift */; };
+		9FF519C32617241B00235080 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF519C22617241B00235080 /* RealmService.swift */; };
+		9FF519C62617244400235080 /* RealmServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF519C52617244400235080 /* RealmServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34FBC78DF722C97E0433EC8D /* Pods_yandex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yandex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		562847D7B0135C668AD15FE7 /* Pods-yandex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yandex.release.xcconfig"; path = "Target Support Files/Pods-yandex/Pods-yandex.release.xcconfig"; sourceTree = "<group>"; };
 		9F0970C6261473C300B53858 /* ApiServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceProtocol.swift; sourceTree = "<group>"; };
 		9F0970C92614740900B53858 /* ApiServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceDelegate.swift; sourceTree = "<group>"; };
 		9F0970CC2614747500B53858 /* ApiStockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiStockModel.swift; sourceTree = "<group>"; };
@@ -55,6 +63,7 @@
 		9F49AD222609FB5C00CEF00E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F49AD252609FB5C00CEF00E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F49AD272609FB5C00CEF00E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F60B9E72618DA080027C5BB /* StockModel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StockModel+Extensions.swift"; sourceTree = "<group>"; };
 		9F7951E9261137DC0075781E /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
 		9F7951EC261138030075781E /* HomeAssemblyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssemblyProtocol.swift; sourceTree = "<group>"; };
 		9F7951F1261138A60075781E /* HomeRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouterProtocol.swift; sourceTree = "<group>"; };
@@ -74,12 +83,15 @@
 		9F79521E26113F180075781E /* HomeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocol.swift; sourceTree = "<group>"; };
 		9F79522126113F5B0075781E /* HomeViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewDataSource.swift; sourceTree = "<group>"; };
 		9F79522426113F700075781E /* HomeViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewDelegate.swift; sourceTree = "<group>"; };
-		9F79522A2611D7490075781E /* HomeStocksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStocksModel.swift; sourceTree = "<group>"; };
-		9F79522E2611FAB10075781E /* FavoriteStocksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStocksModel.swift; sourceTree = "<group>"; };
+		9F79522A2611D7490075781E /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
 		9F795232261207D70075781E /* HomeLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLayout.swift; sourceTree = "<group>"; };
 		9F79523526121C080075781E /* HomeMenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuBar.swift; sourceTree = "<group>"; };
 		9F795238261229CD0075781E /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		9F79523B261237B50075781E /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		9FF519BC26171C6400235080 /* FavoriteStockEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStockEntity.swift; sourceTree = "<group>"; };
+		9FF519C22617241B00235080 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		9FF519C52617244400235080 /* RealmServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmServiceProtocol.swift; sourceTree = "<group>"; };
+		B12280BB4A5FD534E1F95B17 /* Pods-yandex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yandex.debug.xcconfig"; path = "Target Support Files/Pods-yandex/Pods-yandex.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,38 +99,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FF519B72617152700235080 /* RealmSwift in Frameworks */,
+				9FF519B52617152700235080 /* Realm in Frameworks */,
+				9B7418F25BCEF5A493DC3332 /* Pods_yandex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6019A9312C402262FE353851 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34FBC78DF722C97E0433EC8D /* Pods_yandex.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72DD15E8C8803ED695FD1D04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B12280BB4A5FD534E1F95B17 /* Pods-yandex.debug.xcconfig */,
+				562847D7B0135C668AD15FE7 /* Pods-yandex.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9F0970C52614739800B53858 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				9F0970D026148A5E00B53858 /* ApiEndPoint.swift */,
-				9F79523B261237B50075781E /* ApiService.swift */,
-				9F0970C6261473C300B53858 /* ApiServiceProtocol.swift */,
-				9F0970C92614740900B53858 /* ApiServiceDelegate.swift */,
-				9F0970CC2614747500B53858 /* ApiStockModel.swift */,
+				9FF519BB26171C3800235080 /* RealmService */,
+				9FF519B12616709700235080 /* ApiService */,
 			);
 			name = Services;
-			sourceTree = "<group>";
-		};
-		9F0970D52614910B00B53858 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				9F79522A2611D7490075781E /* HomeStocksModel.swift */,
-				9F79522E2611FAB10075781E /* FavoriteStocksModel.swift */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		9F0970D62614911400B53858 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Entities;
 			sourceTree = "<group>";
 		};
 		9F18C2642615F5B90073DF4C /* Extensions */ = {
@@ -134,6 +147,8 @@
 			children = (
 				9F49AD182609FB5B00CEF00E /* yandex */,
 				9F49AD172609FB5B00CEF00E /* Products */,
+				72DD15E8C8803ED695FD1D04 /* Pods */,
+				6019A9312C402262FE353851 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,7 +166,6 @@
 				9F18C2642615F5B90073DF4C /* Extensions */,
 				9F7951E8261137970075781E /* Home */,
 				9F49AD192609FB5B00CEF00E /* AppDelegate.swift */,
-				9F48ED5E260FD90F00C95468 /* MenuCell.swift */,
 				9F49AD222609FB5C00CEF00E /* Assets.xcassets */,
 				9F49AD242609FB5C00CEF00E /* LaunchScreen.storyboard */,
 				9F49AD272609FB5C00CEF00E /* Info.plist */,
@@ -171,6 +185,7 @@
 		9F7951E4261137250075781E /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				9FF519BC26171C6400235080 /* FavoriteStockEntity.swift */,
 			);
 			name = Entity;
 			sourceTree = "<group>";
@@ -239,8 +254,8 @@
 		9F7952292611D7130075781E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9F0970D62614911400B53858 /* Entities */,
-				9F0970D52614910B00B53858 /* Models */,
+				9F79522A2611D7490075781E /* StockModel.swift */,
+				9F60B9E72618DA080027C5BB /* StockModel+Extensions.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -251,8 +266,30 @@
 				9F795232261207D70075781E /* HomeLayout.swift */,
 				9F79523526121C080075781E /* HomeMenuBar.swift */,
 				9F795238261229CD0075781E /* HomeTableViewCell.swift */,
+				9F48ED5E260FD90F00C95468 /* MenuCell.swift */,
 			);
 			name = Layouts;
+			sourceTree = "<group>";
+		};
+		9FF519B12616709700235080 /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				9F79523B261237B50075781E /* ApiService.swift */,
+				9F0970D026148A5E00B53858 /* ApiEndPoint.swift */,
+				9F0970C6261473C300B53858 /* ApiServiceProtocol.swift */,
+				9F0970C92614740900B53858 /* ApiServiceDelegate.swift */,
+				9F0970CC2614747500B53858 /* ApiStockModel.swift */,
+			);
+			name = ApiService;
+			sourceTree = "<group>";
+		};
+		9FF519BB26171C3800235080 /* RealmService */ = {
+			isa = PBXGroup;
+			children = (
+				9FF519C22617241B00235080 /* RealmService.swift */,
+				9FF519C52617244400235080 /* RealmServiceProtocol.swift */,
+			);
+			name = RealmService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +299,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F49AD2A2609FB5C00CEF00E /* Build configuration list for PBXNativeTarget "yandex" */;
 			buildPhases = (
+				93738E81B28BC36888843324 /* [CP] Check Pods Manifest.lock */,
 				9F49AD122609FB5B00CEF00E /* Sources */,
 				9F49AD132609FB5B00CEF00E /* Frameworks */,
 				9F49AD142609FB5B00CEF00E /* Resources */,
@@ -271,6 +309,10 @@
 			dependencies = (
 			);
 			name = yandex;
+			packageProductDependencies = (
+				9FF519B42617152700235080 /* Realm */,
+				9FF519B62617152700235080 /* RealmSwift */,
+			);
 			productName = yandex;
 			productReference = 9F49AD162609FB5B00CEF00E /* yandex.app */;
 			productType = "com.apple.product-type.application";
@@ -298,6 +340,9 @@
 				Base,
 			);
 			mainGroup = 9F49AD0D2609FB5B00CEF00E;
+			packageReferences = (
+				9FF519B32617152700235080 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = 9F49AD172609FB5B00CEF00E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -319,20 +364,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		93738E81B28BC36888843324 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yandex-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9F49AD122609FB5B00CEF00E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9F79521C26113EEF0075781E /* HomeView.swift in Sources */,
+				9FF519C32617241B00235080 /* RealmService.swift in Sources */,
 				9F49AD1A2609FB5B00CEF00E /* AppDelegate.swift in Sources */,
 				9F0970CD2614747500B53858 /* ApiStockModel.swift in Sources */,
 				9F79522526113F700075781E /* HomeViewDelegate.swift in Sources */,
 				9F795202261139FA0075781E /* HomeInteractor.swift in Sources */,
+				9F60B9E82618DA080027C5BB /* StockModel+Extensions.swift in Sources */,
 				9F7951ED261138030075781E /* HomeAssemblyProtocol.swift in Sources */,
 				9F79520826113A3C0075781E /* HomeViewController.swift in Sources */,
 				9F7951F5261138D00075781E /* HomeRouter.swift in Sources */,
-				9F79522B2611D7490075781E /* HomeStocksModel.swift in Sources */,
+				9F79522B2611D7490075781E /* StockModel.swift in Sources */,
 				9F79521426113E2E0075781E /* HomeViewControllerOutputProtocol.swift in Sources */,
 				9F79521F26113F180075781E /* HomeViewProtocol.swift in Sources */,
 				9F0970D126148A5E00B53858 /* ApiEndPoint.swift in Sources */,
@@ -344,15 +416,16 @@
 				9F7951F2261138A60075781E /* HomeRouterProtocol.swift in Sources */,
 				9F79522226113F5B0075781E /* HomeViewDataSource.swift in Sources */,
 				9F79521826113ECC0075781E /* HomeViewInputProtocol.swift in Sources */,
+				9FF519BD26171C6400235080 /* FavoriteStockEntity.swift in Sources */,
 				9F0970CA2614740900B53858 /* ApiServiceDelegate.swift in Sources */,
 				9F7951FE261139D30075781E /* HomeInteractorProtocol.swift in Sources */,
+				9FF519C62617244400235080 /* RealmServiceProtocol.swift in Sources */,
 				9F48ED5F260FD90F00C95468 /* MenuCell.swift in Sources */,
 				9F795233261207D70075781E /* HomeLayout.swift in Sources */,
 				9F79521126113E110075781E /* HomeViewControllerInputProtocol.swift in Sources */,
 				9F79520B26113CA70075781E /* HomeInteractorOutputProtocol.swift in Sources */,
 				9F0970C7261473C300B53858 /* ApiServiceProtocol.swift in Sources */,
 				9F79523626121C080075781E /* HomeMenuBar.swift in Sources */,
-				9F79522F2611FAB10075781E /* FavoriteStocksModel.swift in Sources */,
 				9F79520526113A220075781E /* HomeViewControllerProtocol.swift in Sources */,
 				9F79520E26113D4A0075781E /* HomeInteractorInputProtocol.swift in Sources */,
 				9F79523C261237B50075781E /* ApiService.swift in Sources */,
@@ -491,6 +564,7 @@
 		};
 		9F49AD2B2609FB5C00CEF00E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B12280BB4A5FD534E1F95B17 /* Pods-yandex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -510,6 +584,7 @@
 		};
 		9F49AD2C2609FB5C00CEF00E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 562847D7B0135C668AD15FE7 /* Pods-yandex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -549,6 +624,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9FF519B32617152700235080 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.7.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9FF519B42617152700235080 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FF519B32617152700235080 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		9FF519B62617152700235080 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FF519B32617152700235080 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9F49AD0E2609FB5B00CEF00E /* Project object */;
 }

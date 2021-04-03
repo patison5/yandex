@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9768D742-C8AC-4AEF-868C-964A7CA4ADFC"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "400D5AD2-CA61-49F6-A00A-CAF89F6F4C21"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "yandex/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "HomeModelFetched(models:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "400D5AD2-CA61-49F6-A00A-CAF89F6F4C21 - 5c5213f5f258f6a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "yandex.HomeViewController.HomeModelFetched(models: Swift.Array&lt;yandex.StockModel&gt;) -&gt; ()"
+                  moduleName = "yandex"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fedor/Documents/GitHub/yandex/yandex/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "188"
+                  endingLineNumber = "188"
+                  offsetFromSymbolStart = "632">
+               </Location>
+               <Location
+                  uuid = "400D5AD2-CA61-49F6-A00A-CAF89F6F4C21 - ae81376edee03a24"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in yandex.HomeViewController.HomeModelFetched(models: Swift.Array&lt;yandex.StockModel&gt;) -&gt; ()"
+                  moduleName = "yandex"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fedor/Documents/GitHub/yandex/yandex/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "188"
+                  endingLineNumber = "188"
+                  offsetFromSymbolStart = "97">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

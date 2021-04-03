@@ -10,15 +10,6 @@ import UIKit
 class MenuCell: UICollectionViewCell {
 
 	let imageView: UIImageView = {
-//		if let myImage = UIImage(named: "home") {
-//			let tintableImage = myImage.withRenderingMode(.alwaysTemplate)
-//			let img = UIImageView(image: myImage)
-//			img.image = tintableImage
-//			img.tintColor = UIColor.init(red: 91/255, green: 14/255, blue: 13/255, alpha: 1)
-//			return img
-//		}
-//		return UIImageView(frame: .zero)
-		
 		let iv = UIImageView()
 		iv.image = UIImage(named: "home")?.withRenderingMode(.alwaysTemplate)
 		iv.tintColor = UIColor.init(red: 91/255, green: 14/255, blue: 13/255, alpha: 1)

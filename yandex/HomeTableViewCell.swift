@@ -11,13 +11,13 @@ class HomeTableViewCell: UITableViewCell {
 
 	static var identifier: String = "HomeTableViewCell"
 
-	var stock: HomeStocksModel? {
+	var stock: StockModel? {
 		didSet {
 			titleView.text = stock?.title
 			subtitleView.text = stock?.titleDescription
-			stockPrice.text = stock?.currentPrice
+			stockPrice.text = stock?.currentPriceFormatted
 
-			if let priceDelta = stock?.priceDelta {
+			if let priceDelta = stock?.priceDeltaFormatted {
 				stockPriceChanging.text = priceDelta
 
 				if priceDelta.prefix(1) == "-" {

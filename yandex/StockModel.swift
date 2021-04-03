@@ -1,11 +1,13 @@
 //
-//  HomeStocksModel.swift
+//  StockModel.swift
 //  yandex
 //
 //  Created by Fedor Penin on 29.03.2021.
 //
 
-struct HomeStocksModel {
+struct StockModel {
+
+	var API_id: Int
 
 	/// Логотип компании
 	var thumbnailImageName: String?
@@ -17,10 +19,13 @@ struct HomeStocksModel {
 	var titleDescription: String?
 
 	/// Текущая цена акции
-	var currentPrice: String?
+	var currentPrice: Float?
 
-	/// Дельта изменения цены по сравнении с пердыдущим значением
-	var priceDelta: String?
+	/// Предыдущая цена
+	var previousPrice: Float?
+
+	/// Валюта
+	var currency: String?
 
 	/// Является ли отслеживаемой акцией
 	var isFavorite: Bool?

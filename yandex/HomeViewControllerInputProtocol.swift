@@ -7,7 +7,19 @@
 
 protocol HomeViewControllerInputProtocol: AnyObject {
 
-	func getHomeModel(models: [HomeStocksModel])
+	/// Получить список моделей акций
+	/// - Parameter models: список моделей
+	func HomeModelFetched(models: [StockModel])
 
-	func getHomeModelFailed(error: String)
+	/// Ошибка получения списка акций
+	/// - Parameter error: ошибка
+	func HomeModelFetchedFailed(error: String)
+
+	/// Поменять заголовок в соответствии с номером
+	/// - Parameter index: номер
+	func setTitleForIndex(index: Int)
+
+	/// Клик по панели меню
+	/// - Parameter index: номер кнопки панели
+	func menuItemDidClicked(index: Int)
 }

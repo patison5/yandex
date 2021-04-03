@@ -6,6 +6,6 @@ target 'yandex' do
   use_frameworks!
 
   # Pods for yandex
-  pod 'RealmSwift'
+  # pod 'RealmSwift'
 
 end
