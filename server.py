@@ -76,7 +76,7 @@ def stocks_by_id(stocks_id):
 @app.route('/api/v1/stocks', methods=['GET', 'PUT', 'DELETE', 'POST'])
 def stocks():
     if request.method == 'GET':
-        # print(json.dumps(usersList, default=lambda o: o.__dict__, sort_keys=True, indent=4))
+        print(json.dumps(usersList, default=lambda o: o.__dict__, sort_keys=True, indent=4))
         return json.dumps(usersList, default=lambda o: o.__dict__, sort_keys=True, indent=4)
 
 @app.route('/api/v1/company/news', methods=['GET', 'PUT', 'DELETE', 'POST'])

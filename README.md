@@ -28,3 +28,10 @@ pip3 install flask request json
 ```
 python3 server.py
 ```
+
+
+<p align="center">
+  <img src="https://github.com/patison5/yandex/blob/main/api.png?raw=true" alt="Nodemon Logo">
+  <br />
+  <span>Rest Api</span>
+</p>
