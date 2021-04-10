@@ -29,6 +29,8 @@ final class HomeAssembly: HomeAssemblyProtocol {
 
 		view.dataSource = controller
 		view.delegate = controller
+		
+		router.controller = controller
 
 		return controller
 	}

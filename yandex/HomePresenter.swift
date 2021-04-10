@@ -42,6 +42,10 @@ extension HomePresenter: HomeViewControllerOutputProtocol {
 	func fetchFavoriteStocks() {
 		interactor.fetch(type: .databaseFavoriteStocks)
 	}
+
+	func fetchSingleStock(model: StockModel) {
+		router.showSinglePage(id: model.API_id)
+	}
 }
 
 // MARK: - HomeInteractorOutputProtocol

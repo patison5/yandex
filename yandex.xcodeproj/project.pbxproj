@@ -42,8 +42,23 @@
 		9F79523626121C080075781E /* HomeMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79523526121C080075781E /* HomeMenuBar.swift */; };
 		9F795239261229CD0075781E /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F795238261229CD0075781E /* HomeTableViewCell.swift */; };
 		9F79523C261237B50075781E /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79523B261237B50075781E /* ApiService.swift */; };
-		9FF519B52617152700235080 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF519B42617152700235080 /* Realm */; };
-		9FF519B72617152700235080 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF519B62617152700235080 /* RealmSwift */; };
+		9FD935CB261F40F400C23242 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD935CA261F40F300C23242 /* TestViewController.swift */; };
+		9FD935D626218A8500C23242 /* SingleRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD935D526218A8500C23242 /* SingleRouterProtocol.swift */; };
+		9FD935D926218A9B00C23242 /* SinglePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD935D826218A9B00C23242 /* SinglePresenterProtocol.swift */; };
+		9FD935DC26218AB200C23242 /* SingleInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD935DB26218AB200C23242 /* SingleInteractorProtocol.swift */; };
+		9FD935DF26218AD000C23242 /* SingleViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD935DE26218AD000C23242 /* SingleViewControllerProtocol.swift */; };
+		9FD935E226218B6600C23242 /* SingleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD935E126218B6600C23242 /* SingleAssembly.swift */; };
+		9FD935E526218B7300C23242 /* SingleAssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD935E426218B7300C23242 /* SingleAssemblyProtocol.swift */; };
+		9FD935E826218D0600C23242 /* SingleInteractorInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD935E726218D0600C23242 /* SingleInteractorInputProtocol.swift */; };
+		9FD935EB26218D1C00C23242 /* SingleViewControllerInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD935EA26218D1C00C23242 /* SingleViewControllerInputProtocol.swift */; };
+		9FD935EE26218D3700C23242 /* SingleViewControllerOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD935ED26218D3700C23242 /* SingleViewControllerOutputProtocol.swift */; };
+		9FD935F126218D4600C23242 /* SingleInteractorOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD935F026218D4600C23242 /* SingleInteractorOutputProtocol.swift */; };
+		9FD935F42621B8F600C23242 /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD935F32621B8F600C23242 /* SingleViewController.swift */; };
+		9FD935F72621B93700C23242 /* SingleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD935F62621B93700C23242 /* SingleInteractor.swift */; };
+		9FD935FA2621B99100C23242 /* SinglePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD935F92621B99100C23242 /* SinglePresenter.swift */; };
+		9FD935FE2621BA5A00C23242 /* SingleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD935FD2621BA5A00C23242 /* SingleRouter.swift */; };
+		9FF519B52617152700235080 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF519B42617152700235080 /* SwiftPackageProductDependency */; };
+		9FF519B72617152700235080 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF519B62617152700235080 /* SwiftPackageProductDependency */; };
 		9FF519BD26171C6400235080 /* FavoriteStockEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF519BC26171C6400235080 /* FavoriteStockEntity.swift */; };
 		9FF519C32617241B00235080 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF519C22617241B00235080 /* RealmService.swift */; };
 		9FF519C62617244400235080 /* RealmServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF519C52617244400235080 /* RealmServiceProtocol.swift */; };
@@ -88,6 +103,21 @@
 		9F79523526121C080075781E /* HomeMenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuBar.swift; sourceTree = "<group>"; };
 		9F795238261229CD0075781E /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		9F79523B261237B50075781E /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		9FD935CA261F40F300C23242 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		9FD935D526218A8500C23242 /* SingleRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRouterProtocol.swift; sourceTree = "<group>"; };
+		9FD935D826218A9B00C23242 /* SinglePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePresenterProtocol.swift; sourceTree = "<group>"; };
+		9FD935DB26218AB200C23242 /* SingleInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleInteractorProtocol.swift; sourceTree = "<group>"; };
+		9FD935DE26218AD000C23242 /* SingleViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewControllerProtocol.swift; sourceTree = "<group>"; };
+		9FD935E126218B6600C23242 /* SingleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAssembly.swift; sourceTree = "<group>"; };
+		9FD935E426218B7300C23242 /* SingleAssemblyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAssemblyProtocol.swift; sourceTree = "<group>"; };
+		9FD935E726218D0600C23242 /* SingleInteractorInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleInteractorInputProtocol.swift; sourceTree = "<group>"; };
+		9FD935EA26218D1C00C23242 /* SingleViewControllerInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewControllerInputProtocol.swift; sourceTree = "<group>"; };
+		9FD935ED26218D3700C23242 /* SingleViewControllerOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewControllerOutputProtocol.swift; sourceTree = "<group>"; };
+		9FD935F026218D4600C23242 /* SingleInteractorOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleInteractorOutputProtocol.swift; sourceTree = "<group>"; };
+		9FD935F32621B8F600C23242 /* SingleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
+		9FD935F62621B93700C23242 /* SingleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleInteractor.swift; sourceTree = "<group>"; };
+		9FD935F92621B99100C23242 /* SinglePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePresenter.swift; sourceTree = "<group>"; };
+		9FD935FD2621BA5A00C23242 /* SingleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRouter.swift; sourceTree = "<group>"; };
 		9FF519BC26171C6400235080 /* FavoriteStockEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStockEntity.swift; sourceTree = "<group>"; };
 		9FF519C22617241B00235080 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		9FF519C52617244400235080 /* RealmServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmServiceProtocol.swift; sourceTree = "<group>"; };
@@ -99,8 +129,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FF519B72617152700235080 /* RealmSwift in Frameworks */,
-				9FF519B52617152700235080 /* Realm in Frameworks */,
+				9FF519B72617152700235080 /* BuildFile in Frameworks */,
+				9FF519B52617152700235080 /* BuildFile in Frameworks */,
 				9B7418F25BCEF5A493DC3332 /* Pods_yandex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,10 +195,12 @@
 			children = (
 				9F18C2642615F5B90073DF4C /* Extensions */,
 				9F7951E8261137970075781E /* Home */,
+				9FD935CE26218A1500C23242 /* Single */,
 				9F49AD192609FB5B00CEF00E /* AppDelegate.swift */,
 				9F49AD222609FB5C00CEF00E /* Assets.xcassets */,
 				9F49AD242609FB5C00CEF00E /* LaunchScreen.storyboard */,
 				9F49AD272609FB5C00CEF00E /* Info.plist */,
+				9FD935CA261F40F300C23242 /* TestViewController.swift */,
 			);
 			path = yandex;
 			sourceTree = "<group>";
@@ -271,6 +303,67 @@
 			name = Layouts;
 			sourceTree = "<group>";
 		};
+		9FD935CE26218A1500C23242 /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				9FD935E126218B6600C23242 /* SingleAssembly.swift */,
+				9FD935E426218B7300C23242 /* SingleAssemblyProtocol.swift */,
+				9FD935D326218A4500C23242 /* View */,
+				9FD935D226218A3800C23242 /* Interactor */,
+				9FD935D126218A2E00C23242 /* Presenter */,
+				9FD935D026218A2600C23242 /* Entity */,
+				9FD935CF26218A1E00C23242 /* Router */,
+			);
+			name = Single;
+			sourceTree = "<group>";
+		};
+		9FD935CF26218A1E00C23242 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9FD935D526218A8500C23242 /* SingleRouterProtocol.swift */,
+				9FD935FD2621BA5A00C23242 /* SingleRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		9FD935D026218A2600C23242 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		9FD935D126218A2E00C23242 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9FD935F92621B99100C23242 /* SinglePresenter.swift */,
+				9FD935D826218A9B00C23242 /* SinglePresenterProtocol.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		9FD935D226218A3800C23242 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9FD935F62621B93700C23242 /* SingleInteractor.swift */,
+				9FD935DB26218AB200C23242 /* SingleInteractorProtocol.swift */,
+				9FD935E726218D0600C23242 /* SingleInteractorInputProtocol.swift */,
+				9FD935F026218D4600C23242 /* SingleInteractorOutputProtocol.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		9FD935D326218A4500C23242 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FD935F32621B8F600C23242 /* SingleViewController.swift */,
+				9FD935DE26218AD000C23242 /* SingleViewControllerProtocol.swift */,
+				9FD935EA26218D1C00C23242 /* SingleViewControllerInputProtocol.swift */,
+				9FD935ED26218D3700C23242 /* SingleViewControllerOutputProtocol.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		9FF519B12616709700235080 /* ApiService */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +396,7 @@
 				9F49AD122609FB5B00CEF00E /* Sources */,
 				9F49AD132609FB5B00CEF00E /* Frameworks */,
 				9F49AD142609FB5B00CEF00E /* Resources */,
+				6A8363CB04F83CB08F24C56D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,8 +404,8 @@
 			);
 			name = yandex;
 			packageProductDependencies = (
-				9FF519B42617152700235080 /* Realm */,
-				9FF519B62617152700235080 /* RealmSwift */,
+				9FF519B42617152700235080 /* SwiftPackageProductDependency */,
+				9FF519B62617152700235080 /* SwiftPackageProductDependency */,
 			);
 			productName = yandex;
 			productReference = 9F49AD162609FB5B00CEF00E /* yandex.app */;
@@ -341,7 +435,7 @@
 			);
 			mainGroup = 9F49AD0D2609FB5B00CEF00E;
 			packageReferences = (
-				9FF519B32617152700235080 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				9FF519B32617152700235080 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 9F49AD172609FB5B00CEF00E /* Products */;
 			projectDirPath = "";
@@ -365,6 +459,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6A8363CB04F83CB08F24C56D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yandex/Pods-yandex-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yandex/Pods-yandex-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yandex/Pods-yandex-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		93738E81B28BC36888843324 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -402,32 +513,47 @@
 				9F795202261139FA0075781E /* HomeInteractor.swift in Sources */,
 				9F60B9E82618DA080027C5BB /* StockModel+Extensions.swift in Sources */,
 				9F7951ED261138030075781E /* HomeAssemblyProtocol.swift in Sources */,
+				9FD935DF26218AD000C23242 /* SingleViewControllerProtocol.swift in Sources */,
+				9FD935EB26218D1C00C23242 /* SingleViewControllerInputProtocol.swift in Sources */,
 				9F79520826113A3C0075781E /* HomeViewController.swift in Sources */,
 				9F7951F5261138D00075781E /* HomeRouter.swift in Sources */,
 				9F79522B2611D7490075781E /* StockModel.swift in Sources */,
 				9F79521426113E2E0075781E /* HomeViewControllerOutputProtocol.swift in Sources */,
+				9FD935D926218A9B00C23242 /* SinglePresenterProtocol.swift in Sources */,
 				9F79521F26113F180075781E /* HomeViewProtocol.swift in Sources */,
+				9FD935F42621B8F600C23242 /* SingleViewController.swift in Sources */,
 				9F0970D126148A5E00B53858 /* ApiEndPoint.swift in Sources */,
 				9F7951EA261137DC0075781E /* HomeAssembly.swift in Sources */,
 				9F795239261229CD0075781E /* HomeTableViewCell.swift in Sources */,
+				9FD935F126218D4600C23242 /* SingleInteractorOutputProtocol.swift in Sources */,
 				9F7951F8261139120075781E /* HomePresenterProtocol.swift in Sources */,
 				9F18C2622615F4BD0073DF4C /* UIImageViewExtension.swift in Sources */,
 				9F7951FB261139B60075781E /* HomePresenter.swift in Sources */,
 				9F7951F2261138A60075781E /* HomeRouterProtocol.swift in Sources */,
 				9F79522226113F5B0075781E /* HomeViewDataSource.swift in Sources */,
+				9FD935E826218D0600C23242 /* SingleInteractorInputProtocol.swift in Sources */,
 				9F79521826113ECC0075781E /* HomeViewInputProtocol.swift in Sources */,
 				9FF519BD26171C6400235080 /* FavoriteStockEntity.swift in Sources */,
 				9F0970CA2614740900B53858 /* ApiServiceDelegate.swift in Sources */,
+				9FD935F72621B93700C23242 /* SingleInteractor.swift in Sources */,
+				9FD935EE26218D3700C23242 /* SingleViewControllerOutputProtocol.swift in Sources */,
 				9F7951FE261139D30075781E /* HomeInteractorProtocol.swift in Sources */,
+				9FD935E226218B6600C23242 /* SingleAssembly.swift in Sources */,
 				9FF519C62617244400235080 /* RealmServiceProtocol.swift in Sources */,
+				9FD935FA2621B99100C23242 /* SinglePresenter.swift in Sources */,
 				9F48ED5F260FD90F00C95468 /* MenuCell.swift in Sources */,
+				9FD935DC26218AB200C23242 /* SingleInteractorProtocol.swift in Sources */,
 				9F795233261207D70075781E /* HomeLayout.swift in Sources */,
 				9F79521126113E110075781E /* HomeViewControllerInputProtocol.swift in Sources */,
 				9F79520B26113CA70075781E /* HomeInteractorOutputProtocol.swift in Sources */,
 				9F0970C7261473C300B53858 /* ApiServiceProtocol.swift in Sources */,
+				9FD935D626218A8500C23242 /* SingleRouterProtocol.swift in Sources */,
 				9F79523626121C080075781E /* HomeMenuBar.swift in Sources */,
 				9F79520526113A220075781E /* HomeViewControllerProtocol.swift in Sources */,
 				9F79520E26113D4A0075781E /* HomeInteractorInputProtocol.swift in Sources */,
+				9FD935FE2621BA5A00C23242 /* SingleRouter.swift in Sources */,
+				9FD935E526218B7300C23242 /* SingleAssemblyProtocol.swift in Sources */,
+				9FD935CB261F40F400C23242 /* TestViewController.swift in Sources */,
 				9F79523C261237B50075781E /* ApiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,7 +752,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9FF519B32617152700235080 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+		9FF519B32617152700235080 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-cocoa.git";
 			requirement = {
@@ -637,14 +763,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9FF519B42617152700235080 /* Realm */ = {
+		9FF519B42617152700235080 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FF519B32617152700235080 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			package = 9FF519B32617152700235080 /* RemoteSwiftPackageReference */;
 			productName = Realm;
 		};
-		9FF519B62617152700235080 /* RealmSwift */ = {
+		9FF519B62617152700235080 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FF519B32617152700235080 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			package = 9FF519B32617152700235080 /* RemoteSwiftPackageReference */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

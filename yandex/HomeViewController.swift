@@ -184,7 +184,7 @@ extension HomeViewController: HomeViewControllerInputProtocol {
 //			self.data = Array(self.data[1...5])
 ////			self.table.reloadData()
 ////			let paths = [0, 1, 2, 3, 4].compactMap { IndexPath(row: $0, section: 0) }
-			self.table.reloadSections(.init(integer: 0), with: .automatic)
+			self.table.reloadSections(.init(integer: 0), with: .fade)
 		}
 	}
 
@@ -199,7 +199,6 @@ extension HomeViewController: HomeViewControllerInputProtocol {
 	}
 
 	func menuItemDidClicked(index: Int) {
-		print("cliced at \(index)")
 		if (index == 1) {
 			presenter.fetchFavoriteStocks()
 		} else {
@@ -260,6 +259,10 @@ extension HomeViewController: UITableViewDelegate {
 		if searchBar.isFirstResponder {
 			searchBar.resignFirstResponder()
 		}
+	}
+	
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		presenter.fetchSingleStock(model: data[indexPath.row])
 	}
 }
 

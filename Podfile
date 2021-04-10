@@ -7,5 +7,6 @@ target 'yandex' do
 
   # Pods for yandex
   # pod 'RealmSwift'
+	pod 'Charts'
 
 end

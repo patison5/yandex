@@ -15,4 +15,7 @@ protocol HomeViewControllerOutputProtocol: AnyObject {
 
 	/// Получить список избранных акций
 	func fetchFavoriteStocks()
+
+	
+	func fetchSingleStock(model: StockModel)
 }

@@ -73,8 +73,7 @@ private extension HomeInteractor {
 		let models: [StockModel] = tasks.compactMap {
 			return StockModel(API_id: $0.API_id, thumbnailImageName: $0.thumbnailImageName, title: $0.title, titleDescription: $0.titleDescription, currentPrice: $0.currentPrice.value, previousPrice: $0.previousPrice.value, currency: $0.currency, isFavorite: true)
 		}
-		
-		print(models)
+
 		presenter?.apiStocksFetched(models: models)
 	}
 }

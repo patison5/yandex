@@ -9,4 +9,7 @@ import UIKit
 
 protocol HomeRouterProtocol: AnyObject {
 
+	var controller: UIViewController? { get set }
+
+	func showSinglePage(id: Int?)
 }
